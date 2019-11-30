@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
+  "name": "Hello ISTraining",
+  "short_name": "IS-PWA",
   "icons": [{
     "src": "images/hello-icon-128.png",
       "sizes": "128x128",
