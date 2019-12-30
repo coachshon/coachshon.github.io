@@ -20,7 +20,6 @@ Ext.define('App.controller.Action', {
     },
 
   
-
     authenticate: function (form) {
      
         var me = this,
