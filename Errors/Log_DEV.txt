@@ -1,0 +1,267 @@
+********** 05/12/2019 3:45:06 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=70451
+********** 05/12/2019 3:45:06 PM **********
+ReadAccountSales
+********** 05/12/2019 3:45:06 PM **********
+SELECT DATE_KEY,
+            FROM(
+            SELECT * 
+            FROM PDWREPORT.V_ONCO_APP_ACCT_SAL
+                            PIVOT(
+                                SUM (SALES_AMOUNT)
+                                FOR BRAND_CODE
+                                 IN ( )
+                            )
+                        WHERE ACCT_KEY=70451 AND HIER_LEVEL_CODE='NATIONAL'
+                        ORDER BY DATE_KEY
+            )
+            GROUP BY DATE_KEY ORDER BY DATE_KEY
+********** 05/12/2019 3:49:32 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=156201
+********** 05/12/2019 3:49:36 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=108601
+********** 05/12/2019 3:49:36 PM **********
+ReadAccountSales
+********** 05/12/2019 3:49:36 PM **********
+SELECT DATE_KEY,SUM("'INLYTA'") AS INLYTA,SUM("'SUTENT'") AS SUTENT
+            FROM(
+            SELECT * 
+            FROM PDWREPORT.V_ONCO_APP_ACCT_SAL
+                            PIVOT(
+                                SUM (SALES_AMOUNT)
+                                FOR BRAND_CODE
+                                 IN ( 'INLYTA','SUTENT')
+                            )
+                        WHERE ACCT_KEY=108601 AND HIER_LEVEL_CODE='NATIONAL'
+                        ORDER BY DATE_KEY
+            )
+            GROUP BY DATE_KEY ORDER BY DATE_KEY
+********** 05/12/2019 3:49:48 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=156201
+********** 05/12/2019 3:49:51 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=70451
+********** 05/12/2019 3:49:55 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=73218
+********** 05/12/2019 3:49:55 PM **********
+ReadAccountSales
+********** 05/12/2019 3:49:55 PM **********
+SELECT DATE_KEY,SUM("'IBRANCE'") AS IBRANCE
+            FROM(
+            SELECT * 
+            FROM PDWREPORT.V_ONCO_APP_ACCT_SAL
+                            PIVOT(
+                                SUM (SALES_AMOUNT)
+                                FOR BRAND_CODE
+                                 IN ( 'IBRANCE')
+                            )
+                        WHERE ACCT_KEY=73218 AND HIER_LEVEL_CODE='NATIONAL'
+                        ORDER BY DATE_KEY
+            )
+            GROUP BY DATE_KEY ORDER BY DATE_KEY
+********** 05/12/2019 3:50:04 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=108092
+********** 05/12/2019 3:50:07 PM **********
+SELECT BRAND_CODE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE SALES_MAT IS NOT NULL AND SALES_MAT<>0 AND BRAND_CODE!= 'NA' AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=91080
+********** 12/12/2019 11:28:41 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:28:41 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=100924 ORDER BY BRAND_CODE
+********** 12/12/2019 11:28:45 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:28:45 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=180445 ORDER BY BRAND_CODE
+********** 12/12/2019 11:28:48 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:28:48 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=199966 ORDER BY BRAND_CODE
+********** 12/12/2019 11:31:41 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:31:41 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=100505 ORDER BY BRAND_CODE
+********** 12/12/2019 11:31:51 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:31:51 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=108601 ORDER BY BRAND_CODE
+********** 12/12/2019 11:31:55 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:31:55 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=126899 ORDER BY BRAND_CODE
+********** 12/12/2019 11:31:58 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:31:58 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=179133 ORDER BY BRAND_CODE
+********** 12/12/2019 11:32:00 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:32:00 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=139051 ORDER BY BRAND_CODE
+********** 12/12/2019 11:36:22 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:36:22 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=179133 ORDER BY BRAND_CODE
+********** 12/12/2019 11:36:30 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:36:30 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=166921 ORDER BY BRAND_CODE
+********** 12/12/2019 11:36:37 AM **********
+ReadAccountBrand
+********** 12/12/2019 11:36:37 AM **********
+SELECT HIER_LEVEL_CODE, ACCT_KEY, BRAND_CODE, 
+                    '$' || LTRIM (TO_CHAR (SALES_YTD, '999,999,999,999')) as SALES_YTD,
+                    '$' || LTRIM (TO_CHAR (SALES_MAT, '999,999,999,999')) as SALES_MAT,
+                    '$' || LTRIM (TO_CHAR (QUOTA_YTD, '999,999,999,999')) as QUOTA_YTD,
+                    CALLS_YTD, 
+                    case when SALES_YTD_GROWTH is not null then to_Char(round(SALES_YTD_GROWTH))||'%' else to_char(SALES_YTD_GROWTH) end as SALES_YTD_GROWTH,
+                    PLANNED_CALLS, 
+                    case when PERCENT_PLAN is not null then to_Char(round(PERCENT_PLAN))||'%' else to_char(PERCENT_PLAN) end as PERCENT_PLAN, 
+                    SALES_MAT_RANK, 
+                    SALES_MAT_GROWTH_RANK, 
+                    TO_CHAR(LAST_SEEN_DATE,'YYYY-MM-DD') as LAST_SEEN_DATE
+                    FROM PDWREPORT.RPT_ONCO_APP_MY_ACCOUNTS
+                    WHERE (SALES_MAT<>0 or PLANNED_CALLS>0 or CALLS_YTD>0 )
+                    AND HIER_LEVEL_CODE='NATIONAL' AND ACCT_KEY=106473 ORDER BY BRAND_CODE

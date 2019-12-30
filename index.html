@@ -1,217 +1,38 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <title>Love2Dev Add To Homescreen Test Site</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ONCO DEMO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="ONCOBot DEV">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
+    <!-- For non-Retina (@1× display) iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+    <link rel="icon" type="image/x-icon" href='favicon.ico' />
+    <link rel="shortcut icon" type="image/x-icon" href='favicon.ico' />
 
-    <meta name="apple-mobile-web-app-title" content="Add to Home">
+    <!--  A JSON-format manifest file for developers to place metadata associated with a web application  <link rel="manifest" href="manifest.json"> -->
+    <link rel="manifest" href="manifest.json">
 
-    <link rel="shortcut icon" sizes="16x16" href="imgs/icon-16x16.png">
-    <link rel="shortcut icon" sizes="196x196" href="imgs/icon-196x196.png">
+    <script type="text/javascript" src="ext/build/ext-modern-all-debug_7.js"></script>
+    <script type="text/javascript" src="ext/build/charts-debug.js"></script>
+    <script type="text/javascript" src="ext/build/modern/theme-material-debug.js"></script>
 
-    <link rel="apple-touch-icon-precomposed" href="imgs/icon-152x152.png">
+    <link href="ext/build/modern/resources/theme-material-all-debug.css" rel="stylesheet" />
+    <link href="ext/build/modern/resources/charts-all-debug.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style/addtohomescreen.css">
-    <link rel="stylesheet" type="text/css" href="style/site.css">
-    <link rel="stylesheet" type="text/css" href="style/animate.css">
-    <meta name="theme-color" content="#fff">
+    <link href="resources/css/App-all.css?v=1.11" rel="stylesheet" />
+    <script type="text/javascript" src="app.js"></script>
 
-    <link href="manifest.json" rel="manifest">
+  
+
 
 </head>
+<body class="launching">
 
-<body>
-
-    <div class="container">
-        <br /><br /><br />
-        <p>The Love2Dev Custom Add to Homescreen Prompt Manager. You can control how visitors are prompted to add your
-            <a href="https://love2dev.com/pwa/"></a>Progressive Web App</a> to their device, including iPhone and iPad.
-        </p>
-        <p>There are some basic criteria a page must meet in order to qualify to trigger a prompt. There must at least
-            be a
-            reference to a web manifest file and a registered service worker. From there you can configure the library
-            to
-            follow your own ruleset.</p>
-        <p>There are several example test pages available to demonstrate how the library can be used. There are several
-            custom properties and settings you can use to control how the native and non-native prompts are triggered.
-        </p>
-        <p>Chrome and the Chromium based Edge support a native prompt for both Android and desktops. If available this
-            is
-            the default choice. The library catches the beforeinstall event to reference the event object and display
-            the
-            native prompt according to the custom ruleset.</p>
-        <p>Classic Edge does not have an Add to Desktop feature, so no prompt should display. This will be the general
-            rule
-            in any browser that does not have some sort of homescreen support, like desktop FireFox.</p>
-        <br /><br /><br />
-        <div class="d-flex row">
-
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">General Sample</h5>
-                    <p class="card-text">A set of properties and values passed to the library to demonstrate its
-                        flexibility.</p>
-                    <a href="general/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">Custom Trigger</h5>
-                    <p class="card-text">Trigger the prompt mannually by calling the trigger method.</p>
-                    <a href="trigger/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">Custom Criteria</h5>
-                    <p class="card-text">Sets the customCriteria property to demonstrate how you can control if a prompt
-                        can
-                        be displayed using a custom function or simply passing true or false.</p>
-                    <a href="custom/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">iPhone</h5>
-                    <p class="card-text">Using the debug property to mannually set the platform (browser) to iPhone.
-                        Note:
-                        Safari is the only iOS browser supported by Apple restrictions. So psuedo browsers like Chrome,
-                        Edge
-                        & FireFox are excluded.</p>
-                    <a href="iphone/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">iPad</h5>
-                    <p class="card-text">Using the debug property to mannually set the platform (browser) to iPad. Note:
-                        Safari is the only iOS browser supported by Apple restrictions. So psuedo browsers like Chrome,
-                        Edge
-                        & FireFox are excluded.</p>
-                    <a href="ipad/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">FireFox</h5>
-                    <p class="card-text">Using the debug property to mannually set the platform (browser) to FireFox.
-                        Note:
-                        FireFox only supports Add to Homescreen on Android.</p>
-                    <a href="firefox/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">Opera</h5>
-                    <p class="card-text">Using the debug property to mannually set the platform (browser) to FireFox.
-                        Note:
-                        Opera only supports Add to Homescreen on Android.</p>
-                    <a href="opera/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">Samsung</h5>
-                    <p class="card-text">Using the debug property to mannually set the platform (browser) to FireFox.
-                        Note:
-                        Samsung only supports Add to Homescreen on Android.</p>
-                    <a href="ipad/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-body">
-                    <h5 class="card-title">Inline</h5>
-                    <p class="card-text">Display an inline promotion.</p>
-                    <a href="inline/" class="card-link">Try it Out</a>
-                </div>
-            </div>
-            <div class="row m-3 col-12">
-                <div class="log-target"></div>
-            </div>
-            <div class="row d-flex mx-5 my-2 justify-content-end col-12">
-                <button class="btn btn-primary btn-clear" onClick="clearToken();">Clear Token</button>
-            </div>
-        </div>
-
-    </div>
-    <div class="ath-container banner-bottom-center">
-        <div class="ath-banner">
-            <div class="ath-banner-cell ath-banner-cell-md">
-                <img src="imgs/pwa-logo-50x50.png" alt="PWA" class="ath-prompt-logo">
-            </div>
-            <div class="ath-banner-cell">
-                <button class="btn btn-cancel btn-link">Not Now</button>
-            </div>
-            <div class="ath-banner-title">
-                <p>Install this PWA?</p>
-            </div>
-            <div class="ath-banner-cell">
-                <button class="btn btn-install btn-success">Install</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/custom_console.js"></script>
-    <script src="js/addtohomescreen.js"></script>
-    <script>
-        var ath = addToHomescreen( {
-            autostart: false,
-            autoHide: 0,
-            logging: true,
-            minSessions: 2,
-            onShow: function () {
-                console.log( "showing" );
-            },
-            onInit: function () {
-                console.log( "initializing" );
-            },
-            onAdd: function () {
-                console.log( "adding" );
-            },
-            onInstall: function () {
-                console.log( "Installing" );
-            },
-            onCancel: function () {
-                console.log( "Cancelling" );
-            },
-            displayNextPrime: true,
-            customCriteria: true,
-            displayPace: 0,
-            mustShowCustomPrompt: false,
-            //            debug: true,
-            customPrompt: {
-                title: "custom message",
-                src: "https://love2dev.com/meta/android/android-launchericon-48-48.png",
-                cancelMsg: "go away",
-                installMsg: "do it"
-            }
-        } );
-
-        var target = document.querySelector( ".log-target" );
-
-        if ( target ) {
-            target.innerText += "\r\nstandalone: " + window.navigator.standalone;
-        }
-
-        function clearToken() {
-
-            ath.clearSession(); // reset the user session
-
-        }
-
-        if ( "serviceWorker" in navigator ) {
-
-            navigator.serviceWorker.register( "/sw.js" );
-
-        }
-    </script>
 </body>
 
 </html>
