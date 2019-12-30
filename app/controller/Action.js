@@ -35,7 +35,7 @@ Ext.define('App.controller.Action', {
         form.clearErrors();        
         //AUTHENTICATE
          if (ntid && password) {
-             Ext.Viewport.setMasked({ xtype: 'loadmask' });
+           
 
              var user={"FIRST_NAME":"Shauna","GROUP_ID":"0","HIER_LEVEL_JOIN":"NATIONAL","LANGUAGE":"en","NTID":"HOGANS03","RESULT_STATUS":"1","USER_NAME":"Shauna Hogan"}             
                              
