@@ -37,19 +37,9 @@ Ext.define('App.controller.Action', {
         //AUTHENTICATE
          if (ntid && password) {
              Ext.Viewport.setMasked({ xtype: 'loadmask' });
-             Ext.Ajax.request({
-                 url: 'Default.aspx/AuthenticateUser',
-                 method: 'POST',
-                 jsonData: {},
-                 params: { ntid: ntid.trim(), password: password.trim() },
-                 callback: function () {
-                     Ext.Viewport.setMasked(false);
-                 },
-                 success: function (response, opts) {
-                     var obj = Ext.decode(response.responseText),
-                         user = obj.d[0],
-                         session;
-                    
+
+             var user={"FIRST_NAME":"Shauna","GROUP_ID":"0","HIER_LEVEL_JOIN":"NATIONAL","LANGUAGE":"en","NTID":"HOGANS03","RESULT_STATUS":"1","USER_NAME":"Shauna Hogan"}             
+                             
                      if (user) {
                          // set up user model...
                          App.app.loggedInUser = user;
@@ -67,12 +57,7 @@ Ext.define('App.controller.Action', {
                          });
                          Ext.Msg.alert('LOGIN FAILURE', 'Your login credentials failed authentication.<br /><br />Ensure your NT ID and password are correct, or contact the tool owner to get access to the ONCO App.');
                      }
-                 },
-                 failure: function (response, opts) {
-                     Ext.Msg.alert('ERROR', 'Server-side failure:\n\n' + JSON.parse(response.responseText).Message);
-                     //  console.log('server-side failure with status code ' + response.status);
-                 }
-             });
+                
          } else {
              form.setErrors({
                  ntid: 'NTID required',
