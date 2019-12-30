@@ -7,7 +7,7 @@ Ext.define('App.view.home.HomeController', {
         var me = this,
             params = { NTID: App.app.loggedInUser.NTID };
 
-        me.fireEvent('callservice', 'Default.aspx/WelcomeMessage', null, params, function (response) { me.callbackWelcomeMessage(response) });
+      //  me.fireEvent('callservice', 'Default.aspx/WelcomeMessage', null, params, function (response) { me.callbackWelcomeMessage(response) });
 
                
     },
