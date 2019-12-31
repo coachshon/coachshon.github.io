@@ -73,31 +73,8 @@ Ext.define('App.view.main.Menu', {
             vm = me.getViewModel(),
             navigator = me.child('#navigator'),
             store = navigator.getStore(),
-            groupID = App.app.loggedInUser.GROUP_ID,
             lang = App.app.currentLocale;
-
-        //add bug report
-
-        if ((window.location.toString().toLowerCase().search('dev') != -1) || (window.location.toString().toLowerCase().search('test') != -1)) {
-            store.add({
-                id: 'uats',
-                xtype: 'uatbrowse',
-                bgClr: '#a7fe33',
-                icon: 'bug',
-                text: ''
-            })
-        }
-
-        if (groupID === '0') {  // ADMIN, add permissions
-            store.add({
-                id: 'permissions',
-                xtype: 'permissionbrowse',
-                bgClr: '#ef5d18',
-                icon: 'user-secret',
-                text:''
-            })
-        };
-
+       
         
         //set text language for the menu items
          var data = store.data.items;
