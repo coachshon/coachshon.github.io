@@ -4,7 +4,7 @@ Ext.define('App.store.hco.Accounts', {
   model: 'App.model.hco.Account',
   proxy: {
       type: 'ajax',
-      url: 'app/data/Accounts.json',
+      url: 'app/data/hco/Accounts.json',
       reader:{
           type: 'json',
           root: 'd'

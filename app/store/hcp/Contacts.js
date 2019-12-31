@@ -4,7 +4,7 @@ Ext.define('App.store.hcp.Contacts', {
   model: 'App.model.hcp.Contact',
       proxy: {
           type: 'ajax',
-          url: 'app/data/Contacts.json',
+          url: 'app/data/hcp/Contacts.json',
           reader:{
               type: 'json',
               root: 'd'
