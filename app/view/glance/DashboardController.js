@@ -22,10 +22,11 @@ Ext.define('App.view.glance.DashboardController', {
         //load the brands
         store.load({  // onLoadData listener will create carousel cards
             callback: function () {
-                store.filterBy(function(rec) {  // apply province filter
+                store.filterBy(function(rec) {  // apply level filter
                     return rec.get('LEVEL_CODE"')== "NATIONAL";                    
                 }); 
                 cmp.unmask();
+                me.onLoadData(store);                
             }
         });
 
