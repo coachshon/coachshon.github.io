@@ -9,7 +9,5 @@ Ext.define('App.store.hco.Accounts', {
           type: 'json',
           root: 'd'
       }
-  }
-  
-  
+  }   
 });
