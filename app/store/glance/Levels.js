@@ -3,32 +3,13 @@
  */
 Ext.define('App.store.glance.Levels', {
     extend: 'Ext.data.TreeStore',
-    alias: 'store.glance-levels',
-    requires: [
-          'App.data.proxy.AjaxASP'
-    ],
-    autoLoad: false,
-    root: {
-        expanded: false  //Tree Stores will load regardless of autoLoad's value IF expand is set to true on the root node.
-    },
-    /*
- If no Model is specified, an implicit model will be created that implements Ext.data.NodeInterface. 
- The standard Tree fields will also be copied onto the Model for maintaining their state.
- */
-    fields: [   // add custom fields here
-         { name: 'code', type: 'string' },
-         { name: 'node', type: 'string' }
-    ],
+    alias: 'store.glance-levels',  
     proxy: {
-        type: 'ajaxASP',
-        reader: {
+        type: 'ajax',
+        url: 'app/data/glance/Levels.json',
+        reader:{
             type: 'json',
-            rootProperty: 'd',
-            idProperty: 'id'
-        },
-        api: {
-            read: 'Default.aspx/ReadGlanceTree'
+            root: 'd'
         }
-    }
-});
-
+    }   
+  });
