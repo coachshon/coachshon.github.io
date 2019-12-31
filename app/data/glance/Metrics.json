@@ -1,7 +1,7 @@
 {
 	"d": [{
 		"HIER_LEVEL_CODE": "DILIBV",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$11,469,988",
 		"SALES_MAT": "$60,011,648",
 		"ATTAINMENT": "42%",
@@ -13,7 +13,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KLASSS",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$8,686,089",
 		"SALES_MAT": "$40,055,186",
 		"ATTAINMENT": "49%",
@@ -25,7 +25,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$9,869,316",
 		"SALES_MAT": "$49,505,586",
 		"ATTAINMENT": "46%",
@@ -37,7 +37,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$30,025,393",
 		"SALES_MAT": "$149,572,420",
 		"ATTAINMENT": "45%",
@@ -49,7 +49,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CORBEJ01",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$1,333,552",
 		"SALES_MAT": "$6,482,094",
 		"ATTAINMENT": "47%",
@@ -61,7 +61,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "LLBENN",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,462,434",
 		"SALES_MAT": "$12,414,719",
 		"ATTAINMENT": "54%",
@@ -73,7 +73,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROBINN01",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,218,626",
 		"SALES_MAT": "$11,638,804",
 		"ATTAINMENT": "43%",
@@ -85,7 +85,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "WOLOSL",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$3,551,453",
 		"SALES_MAT": "$19,192,555",
 		"ATTAINMENT": "37%",
@@ -97,7 +97,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KONOPS",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$1,903,922",
 		"SALES_MAT": "$10,283,476",
 		"ATTAINMENT": "38%",
@@ -109,7 +109,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MALED01",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$1,317,044",
 		"SALES_MAT": "$3,823,159",
 		"ATTAINMENT": "88%",
@@ -121,7 +121,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KEMPIB",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,085,888",
 		"SALES_MAT": "$10,121,346",
 		"ATTAINMENT": "44%",
@@ -133,7 +133,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "GHUMAA",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,089,194",
 		"SALES_MAT": "$10,226,176",
 		"ATTAINMENT": "44%",
@@ -145,7 +145,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "GIBSOD",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$3,193,964",
 		"SALES_MAT": "$15,884,505",
 		"ATTAINMENT": "47%",
@@ -157,7 +157,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROYSIM",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$74,544",
 		"SALES_MAT": "$487,901",
 		"ATTAINMENT": "43%",
@@ -169,7 +169,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "VEILLF",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$88,290",
 		"SALES_MAT": "$687,714",
 		"ATTAINMENT": "42%",
@@ -181,7 +181,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DUCHAK",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$107,888",
 		"SALES_MAT": "$798,521",
 		"ATTAINMENT": "38%",
@@ -193,7 +193,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DUCHAK",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$30,360",
 		"SALES_MAT": "$30,360",
 		"ATTAINMENT": null,
@@ -205,7 +205,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROYSIM",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$182,159",
 		"SALES_MAT": "$182,159",
 		"ATTAINMENT": null,
@@ -217,7 +217,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DUCHAK",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$248,560",
 		"SALES_MAT": "$1,427,205",
 		"ATTAINMENT": "73%",
@@ -229,7 +229,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "VEILLF",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$461,617",
 		"SALES_MAT": "$3,511,450",
 		"ATTAINMENT": "56%",
@@ -241,7 +241,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROYSIM",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$377,962",
 		"SALES_MAT": "$2,613,162",
 		"ATTAINMENT": "46%",
@@ -253,7 +253,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROYSIM",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -265,7 +265,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$405,600",
 		"SALES_MAT": "$2,340,000",
 		"ATTAINMENT": "133%",
@@ -277,7 +277,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DILIBV",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$639,631",
 		"SALES_MAT": "$3,424,247",
 		"ATTAINMENT": "153%",
@@ -289,7 +289,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KLASSS",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$494,052",
 		"SALES_MAT": "$3,863,652",
 		"ATTAINMENT": "102%",
@@ -301,7 +301,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$1,539,283",
 		"SALES_MAT": "$9,627,899",
 		"ATTAINMENT": "128%",
@@ -313,7 +313,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "PE",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -325,7 +325,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MALED01",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$96,252",
 		"SALES_MAT": "$533,052",
 		"ATTAINMENT": "146%",
@@ -337,7 +337,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "WIEBER",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$148,200",
 		"SALES_MAT": "$1,154,400",
 		"ATTAINMENT": "130%",
@@ -349,7 +349,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MOSYCJ",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$249,600",
 		"SALES_MAT": "$2,176,200",
 		"ATTAINMENT": "83%",
@@ -361,7 +361,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "SK",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$949,124",
 		"SALES_MAT": "$2,388,808",
 		"ATTAINMENT": "104%",
@@ -373,7 +373,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MB",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$367,919",
 		"SALES_MAT": "$1,434,351",
 		"ATTAINMENT": "63%",
@@ -385,7 +385,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NT",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$53,322",
 		"SALES_MAT": "$213,286",
 		"ATTAINMENT": "64%",
@@ -397,7 +397,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NS",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$698,513",
 		"SALES_MAT": "$3,177,967",
 		"ATTAINMENT": "48%",
@@ -409,7 +409,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NL",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$239,947",
 		"SALES_MAT": "$1,077,096",
 		"ATTAINMENT": "59%",
@@ -421,7 +421,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "PE",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$79,982",
 		"SALES_MAT": "$298,601",
 		"ATTAINMENT": "46%",
@@ -433,7 +433,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "BC",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$4,164,417",
 		"SALES_MAT": "$20,304,865",
 		"ATTAINMENT": "44%",
@@ -445,7 +445,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ON",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$10,136,436",
 		"SALES_MAT": "$53,529,554",
 		"ATTAINMENT": "42%",
@@ -457,7 +457,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$9,618,705",
 		"SALES_MAT": "$48,343,175",
 		"ATTAINMENT": "46%",
@@ -469,7 +469,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NB",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$565,721",
 		"SALES_MAT": "$3,090,840",
 		"ATTAINMENT": "51%",
@@ -481,7 +481,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "AB",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$3,140,642",
 		"SALES_MAT": "$15,671,218",
 		"ATTAINMENT": "46%",
@@ -493,7 +493,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "YT",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$10,664",
 		"SALES_MAT": "$42,657",
 		"ATTAINMENT": "266%",
@@ -505,7 +505,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$270,722",
 		"SALES_MAT": "$1,974,137",
 		"ATTAINMENT": "40%",
@@ -517,7 +517,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KLASSS",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$442,918",
 		"SALES_MAT": "$3,341,754",
 		"ATTAINMENT": "43%",
@@ -529,7 +529,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DILIBV",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$299,564",
 		"SALES_MAT": "$2,658,541",
 		"ATTAINMENT": "35%",
@@ -541,7 +541,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$1,013,204",
 		"SALES_MAT": "$7,974,432",
 		"ATTAINMENT": "40%",
@@ -553,7 +553,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "YT",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$6,903",
 		"SALES_MAT": "$19,559",
 		"ATTAINMENT": "46%",
@@ -565,7 +565,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "PE",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$0",
 		"SALES_MAT": "$5,733",
 		"ATTAINMENT": null,
@@ -577,7 +577,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DILIBV",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$40,480",
 		"SALES_MAT": "$40,480",
 		"ATTAINMENT": null,
@@ -589,7 +589,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$212,519",
 		"SALES_MAT": "$212,519",
 		"ATTAINMENT": null,
@@ -601,7 +601,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$252,999",
 		"SALES_MAT": "$252,999",
 		"ATTAINMENT": null,
@@ -613,7 +613,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CORBEJ01",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -625,7 +625,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "TAYLOD36",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$30,360",
 		"SALES_MAT": "$30,360",
 		"ATTAINMENT": null,
@@ -637,7 +637,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "OHOSKD",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$10,120",
 		"SALES_MAT": "$10,120",
 		"ATTAINMENT": null,
@@ -649,7 +649,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KLASSS",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$1,668,311",
 		"SALES_MAT": "$9,411,605",
 		"ATTAINMENT": "50%",
@@ -661,7 +661,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$1,088,139",
 		"SALES_MAT": "$7,551,817",
 		"ATTAINMENT": "55%",
@@ -673,7 +673,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DILIBV",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$1,983,849",
 		"SALES_MAT": "$12,546,579",
 		"ATTAINMENT": "48%",
@@ -685,7 +685,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$4,740,300",
 		"SALES_MAT": "$29,510,000",
 		"ATTAINMENT": "50%",
@@ -697,7 +697,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NT",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": "0%",
@@ -709,7 +709,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "YT",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$0",
 		"SALES_MAT": "$42,265",
 		"ATTAINMENT": "0%",
@@ -721,7 +721,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "JJLAMA",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -733,7 +733,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "KLASSS",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$3,500",
 		"SALES_MAT": "$3,500",
 		"ATTAINMENT": null,
@@ -745,7 +745,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NATIONAL",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$3,500",
 		"SALES_MAT": "$3,500",
 		"ATTAINMENT": null,
@@ -757,7 +757,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MOSYCJ",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$3,500",
 		"SALES_MAT": "$3,500",
 		"ATTAINMENT": null,
@@ -769,7 +769,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NL",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$62,400",
 		"SALES_MAT": "$265,200",
 		"ATTAINMENT": "164%",
@@ -781,7 +781,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MB",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$88,452",
 		"SALES_MAT": "$361,452",
 		"ATTAINMENT": "183%",
@@ -793,7 +793,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NS",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$70,231",
 		"SALES_MAT": "$351,047",
 		"ATTAINMENT": "163%",
@@ -805,7 +805,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$382,200",
 		"SALES_MAT": "$2,184,000",
 		"ATTAINMENT": "133%",
@@ -817,7 +817,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ON",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$507,000",
 		"SALES_MAT": "$2,808,000",
 		"ATTAINMENT": "150%",
@@ -829,7 +829,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NB",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$23,400",
 		"SALES_MAT": "$156,000",
 		"ATTAINMENT": "132%",
@@ -841,7 +841,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "AB",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$148,200",
 		"SALES_MAT": "$1,154,400",
 		"ATTAINMENT": "130%",
@@ -853,7 +853,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "BC",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$249,600",
 		"SALES_MAT": "$2,176,200",
 		"ATTAINMENT": "83%",
@@ -865,7 +865,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "SK",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$7,800",
 		"SALES_MAT": "$171,600",
 		"ATTAINMENT": "44%",
@@ -877,7 +877,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CORBEJ01",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$132,631",
 		"SALES_MAT": "$616,247",
 		"ATTAINMENT": "163%",
@@ -889,7 +889,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "TAYLOD36",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$292,547",
 		"SALES_MAT": "$1,112,982",
 		"ATTAINMENT": "248%",
@@ -901,7 +901,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MORIAK02",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$126,181",
 		"SALES_MAT": "$1,077,219",
 		"ATTAINMENT": "90%",
@@ -913,7 +913,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "OHOSKD",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$88,273",
 		"SALES_MAT": "$617,799",
 		"ATTAINMENT": "110%",
@@ -925,7 +925,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "FORTID01",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$3,165,618",
 		"SALES_MAT": "$15,123,499",
 		"ATTAINMENT": "60%",
@@ -937,7 +937,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "SAMSOJ03",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,226,028",
 		"SALES_MAT": "$10,735,046",
 		"ATTAINMENT": "53%",
@@ -949,7 +949,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CHARRG",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,245,906",
 		"SALES_MAT": "$11,331,480",
 		"ATTAINMENT": "47%",
@@ -961,7 +961,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "TRUDEA",
-		"BRAND_CODE": "IBRANCE",
+		"BRAND_CODE": "BRAND J",
 		"SALES": "$2,279,754",
 		"SALES_MAT": "$12,480,859",
 		"ATTAINMENT": "32%",
@@ -973,7 +973,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MB",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$60,837",
 		"SALES_MAT": "$298,493",
 		"ATTAINMENT": "46%",
@@ -985,7 +985,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "BC",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$258,126",
 		"SALES_MAT": "$1,939,188",
 		"ATTAINMENT": "47%",
@@ -997,7 +997,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$270,722",
 		"SALES_MAT": "$1,853,753",
 		"ATTAINMENT": "41%",
@@ -1009,7 +1009,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ON",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$258,205",
 		"SALES_MAT": "$2,175,534",
 		"ATTAINMENT": "32%",
@@ -1021,7 +1021,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NS",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$27,592",
 		"SALES_MAT": "$230,633",
 		"ATTAINMENT": null,
@@ -1033,7 +1033,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NL",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$13,766",
 		"SALES_MAT": "$141,093",
 		"ATTAINMENT": "54%",
@@ -1045,7 +1045,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "SK",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$57,326",
 		"SALES_MAT": "$601,170",
 		"ATTAINMENT": "46%",
@@ -1057,7 +1057,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "AB",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$59,726",
 		"SALES_MAT": "$483,345",
 		"ATTAINMENT": "28%",
@@ -1069,7 +1069,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NB",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$0",
 		"SALES_MAT": "$225,932",
 		"ATTAINMENT": "0%",
@@ -1081,7 +1081,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "OHOSKD",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$129,183",
 		"SALES_MAT": "$995,660",
 		"ATTAINMENT": "51%",
@@ -1093,7 +1093,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MORIAK02",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$94,653",
 		"SALES_MAT": "$883,150",
 		"ATTAINMENT": "24%",
@@ -1105,7 +1105,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CORBEJ01",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$41,358",
 		"SALES_MAT": "$483,007",
 		"ATTAINMENT": "141%",
@@ -1117,7 +1117,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "TAYLOD36",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$34,370",
 		"SALES_MAT": "$296,724",
 		"ATTAINMENT": "20%",
@@ -1129,7 +1129,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MOSYCJ",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$265,029",
 		"SALES_MAT": "$1,958,747",
 		"ATTAINMENT": "47%",
@@ -1141,7 +1141,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MALED01",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$118,163",
 		"SALES_MAT": "$899,663",
 		"ATTAINMENT": "46%",
@@ -1153,7 +1153,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "WIEBER",
-		"BRAND_CODE": "INLYTA",
+		"BRAND_CODE": "BRAND Y",
 		"SALES": "$59,726",
 		"SALES_MAT": "$483,345",
 		"ATTAINMENT": "28%",
@@ -1165,7 +1165,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NL",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -1177,7 +1177,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$212,519",
 		"SALES_MAT": "$212,519",
 		"ATTAINMENT": null,
@@ -1189,7 +1189,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ON",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$40,480",
 		"SALES_MAT": "$40,480",
 		"ATTAINMENT": null,
@@ -1201,7 +1201,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NB",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -1213,7 +1213,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NS",
-		"BRAND_CODE": "LORBRENA",
+		"BRAND_CODE": "BRAND K",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -1225,7 +1225,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "SK",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$316,987",
 		"SALES_MAT": "$1,347,194",
 		"ATTAINMENT": "95%",
@@ -1237,7 +1237,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NL",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$112,714",
 		"SALES_MAT": "$783,674",
 		"ATTAINMENT": "224%",
@@ -1249,7 +1249,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "PE",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$14,694",
 		"SALES_MAT": "$213,114",
 		"ATTAINMENT": "343%",
@@ -1261,7 +1261,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "BC",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$718,504",
 		"SALES_MAT": "$4,224,735",
 		"ATTAINMENT": "63%",
@@ -1273,7 +1273,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$1,058,187",
 		"SALES_MAT": "$7,097,446",
 		"ATTAINMENT": "56%",
@@ -1285,7 +1285,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NS",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$146,208",
 		"SALES_MAT": "$889,389",
 		"ATTAINMENT": "68%",
@@ -1297,7 +1297,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ON",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$1,644,812",
 		"SALES_MAT": "$10,268,630",
 		"ATTAINMENT": "44%",
@@ -1309,7 +1309,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "AB",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$475,481",
 		"SALES_MAT": "$2,750,746",
 		"ATTAINMENT": "32%",
@@ -1321,7 +1321,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MB",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$157,339",
 		"SALES_MAT": "$1,046,665",
 		"ATTAINMENT": "38%",
@@ -1333,7 +1333,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "NB",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$95,373",
 		"SALES_MAT": "$846,142",
 		"ATTAINMENT": "37%",
@@ -1345,7 +1345,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "CORBEJ01",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$339,037",
 		"SALES_MAT": "$2,277,949",
 		"ATTAINMENT": "82%",
@@ -1357,7 +1357,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "OHOSKD",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$497,071",
 		"SALES_MAT": "$2,708,966",
 		"ATTAINMENT": "61%",
@@ -1369,7 +1369,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "TAYLOD36",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$715,793",
 		"SALES_MAT": "$4,564,963",
 		"ATTAINMENT": "48%",
@@ -1381,7 +1381,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MORIAK02",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$431,949",
 		"SALES_MAT": "$2,994,701",
 		"ATTAINMENT": "31%",
@@ -1393,7 +1393,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MALED01",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$474,326",
 		"SALES_MAT": "$2,393,858",
 		"ATTAINMENT": "64%",
@@ -1405,7 +1405,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "MOSYCJ",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$718,504",
 		"SALES_MAT": "$4,267,000",
 		"ATTAINMENT": "63%",
@@ -1417,7 +1417,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "WIEBER",
-		"BRAND_CODE": "SUTENT",
+		"BRAND_CODE": "BRAND Q",
 		"SALES": "$475,481",
 		"SALES_MAT": "$2,750,746",
 		"ATTAINMENT": "32%",
@@ -1429,7 +1429,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "QC",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$0",
 		"SALES_MAT": "$0",
 		"ATTAINMENT": null,
@@ -1441,7 +1441,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "BC",
-		"BRAND_CODE": "VIZIMPRO",
+		"BRAND_CODE": "BRAND E",
 		"SALES": "$3,500",
 		"SALES_MAT": "$3,500",
 		"ATTAINMENT": null,
@@ -1453,7 +1453,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "ROYSIM",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$164,128",
 		"SALES_MAT": "$803,728",
 		"ATTAINMENT": "166%",
@@ -1465,7 +1465,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "VEILLF",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$154,253",
 		"SALES_MAT": "$981,053",
 		"ATTAINMENT": "119%",
@@ -1477,7 +1477,7 @@
 		"DATA_MONTH_TEXT": "Activity - Aug; Sales - Sep"
 	}, {
 		"HIER_LEVEL_CODE": "DUCHAK",
-		"BRAND_CODE": "XALKORI",
+		"BRAND_CODE": "BRAND X",
 		"SALES": "$87,220",
 		"SALES_MAT": "$555,220",
 		"ATTAINMENT": "114%",
