@@ -23,11 +23,9 @@ Ext.define('App.view.glance.DashboardController', {
         store.load({  // onLoadData listener will create carousel cards
             callback: function () {
                 cmp.unmask();
-            },
-            params: params
+            }
         });
 
-        me.fireEvent('callservice', 'Default.aspx/DataMonth', null, { key: 'MY_SUMMARY' }, function (response) { me.callbackDataMonth(response) });
     },
 
     // builds the summary benchmark items per glance card, and binds card indicatore navigation buttons
