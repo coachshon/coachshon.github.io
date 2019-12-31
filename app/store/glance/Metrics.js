@@ -9,7 +9,7 @@ Ext.define('App.store.glance.Metrics', {
       url: 'app/data/glance/Metrics.json',
       reader:{
           type: 'json',
-          root: 'd'
+          rootProperty: 'd'
       }
   }   
 });

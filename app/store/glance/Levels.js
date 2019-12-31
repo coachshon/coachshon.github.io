@@ -9,7 +9,7 @@ Ext.define('App.store.glance.Levels', {
         url: 'app/data/glance/Levels.json',
         reader:{
             type: 'json',
-            root: 'd'
+            rootProperty: 'd'
         }
     }   
   });

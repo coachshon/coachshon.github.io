@@ -7,7 +7,7 @@ Ext.define('App.store.hcp.Contacts', {
           url: 'app/data/hcp/Contacts.json',
           reader:{
               type: 'json',
-              root: 'd'
+              rootProperty: 'd'
           }
       }   
     });
