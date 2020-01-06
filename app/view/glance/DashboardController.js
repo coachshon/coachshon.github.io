@@ -23,7 +23,7 @@ Ext.define('App.view.glance.DashboardController', {
         store.load({  // onLoadData listener will create carousel cards
             callback: function () {
                 store.filterBy(function(rec) {  // apply level filter
-                    return rec.get('LEVEL_CODE')==  App.app.loggedInUser.HIER_LEVEL_JOIN };  
+                    return rec.get('LEVEL_CODE') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;  
                     //LEVEL_CODE: "NATIONAL",                  
                 }); 
                 cmp.unmask();
@@ -437,26 +437,18 @@ Ext.define('App.view.glance.DashboardController', {
         if (!summaryStore) {           
             //set chart data
             var salesStore = Ext.create('App.store.glance.Sales');
-            sales.setStore(salesStore);
-            salesStore.load({
-                callback: function () {
-                    if (salesStore.count() > 0) {
-                        sales.setHidden(false);
-                        //ensure default sales period MONTH 
-                        sales.setSprites(sprite);
-                        sales.redraw();
-                    }
-                },
-                params: params
+            salesStore.filterBy(function(rec) {  // apply level filter
+                return rec.get('HIER_LEVEL_JOIN') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;                               
             });
-
+            sales.setStore(salesStore);
+           
             //set metric list summary data
             summaryStore = Ext.create('App.store.glance.Metrics');
-            summary.setStore(summaryStore);
-            summaryStore.load({
-                params: params
+            summaryStore.filterBy(function(rec) {  // apply level filter
+                return rec.get('HIER_LEVEL_JOIN') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;                               
             });
-
+            summary.setStore(summaryStore);
+            
           
         }
 
