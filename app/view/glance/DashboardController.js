@@ -469,13 +469,14 @@ Ext.define('App.view.glance.DashboardController', {
         //set any benchmark summary data
         if (benchmark && !benchmarkStore) {        
             benchmarkStore = Ext.create('App.store.glance.Metrics');
-            benchmark.setStore(benchmarkStore);            
-            benchmarkStore.load({
-                params: {
-                    level: cardBenchmark.code,
-                    brand: brand
+            benchmarkStore.load({ 
+                callback: function () {
+                    summaryStore.filterBy(function(rec) {  
+                        return rec.get('HIER_LEVEL_CODE') ==  cardBenchmark.code && rec.get('BRAND_CODE') ==  brand;                               
+                    });               
                 }
-            });
+            });            
+            benchmark.setStore(benchmarkStore);            
         }
     },
 
