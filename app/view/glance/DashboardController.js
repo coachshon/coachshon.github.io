@@ -441,7 +441,13 @@ Ext.define('App.view.glance.DashboardController', {
                 callback: function () {
                     salesStore.filterBy(function(rec) {              
                         return rec.get('HIER_LEVEL_CODE') ==  level && rec.get('BRAND_CODE') ==  brand;                               
-                    });               
+                    });           
+                    if (salesStore.count() > 0) {
+                        sales.setHidden(false);
+                        //ensure default sales period MONTH 
+                        sales.setSprites(sprite);
+                        sales.redraw();
+                    }    
                 }
             });        
             console.log(salesStore);    
