@@ -436,14 +436,15 @@ Ext.define('App.view.glance.DashboardController', {
 
         if (!summaryStore) {           
             //set chart data
-            var salesStore = Ext.create('App.store.glance.Sales');
+            var salesStore =  vm.getStore('sales');
+            // Ext.create('App.store.glance.Sales');
             salesStore.filterBy(function(rec) {  // apply level filter
                 return rec.get('HIER_LEVEL_JOIN') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;                               
             });
             sales.setStore(salesStore);
            
             //set metric list summary data
-            summaryStore = Ext.create('App.store.glance.Metrics');
+            summaryStore =  vm.getStore('metrics');
             summaryStore.filterBy(function(rec) {  // apply level filter
                 return rec.get('HIER_LEVEL_JOIN') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;                               
             });

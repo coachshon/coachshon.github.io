@@ -12,6 +12,12 @@ Ext.define('App.view.glance.DashboardModel', {
     stores: {
         brands: {
             type: 'glance-brands'
+        }, 
+        metrics: {
+            type: 'glance-metrics'
+        }, 
+        sales: {
+            type: 'glance-sales'
         }
     }
 });
