@@ -7,7 +7,7 @@ Ext.define('App.store.hco.Accounts', {
       url: 'app/data/hco/Accounts.json',
       reader:{
           type: 'json',
-          root: 'd'
+          rootProperty: 'd'
       }
   }   
 });
