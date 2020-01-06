@@ -437,10 +437,13 @@ Ext.define('App.view.glance.DashboardController', {
         if (!summaryStore) {           
             //set chart data
             var salesStore = Ext.create('App.store.glance.Sales');
+            console.log(level)
             salesStore.load({ 
                 callback: function () {
-                    salesStore.filterBy(function(rec) {  // apply level filter
-                        return rec.get('HIER_LEVEL_JOIN') ==  level && rec.get('BRAND_CODE') ==  brand;                               
+                    salesStore.filterBy(function(rec) {  
+                         console.log(rec.get('HIER_LEVEL_JOIN'));
+          
+                        return rec.get('HIER_LEVEL_JOIN') ==  level//&& rec.get('BRAND_CODE') ==  brand;                               
                     });               
                 }
             });           
@@ -450,7 +453,7 @@ Ext.define('App.view.glance.DashboardController', {
             summaryStore = Ext.create('App.store.glance.Metrics');
             summaryStore.load({ 
                 callback: function () {
-                    summaryStore.filterBy(function(rec) {  // apply level filter
+                    summaryStore.filterBy(function(rec) {  
                         return rec.get('HIER_LEVEL_JOIN') ==  level && rec.get('BRAND_CODE') ==  brand;                               
                     });               
                 }
