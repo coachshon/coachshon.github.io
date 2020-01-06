@@ -436,11 +436,14 @@ Ext.define('App.view.glance.DashboardController', {
 
         if (!summaryStore) {           
             //set chart data
-            var salesStore = Ext.create('App.store.glance.Sales');          
+            var salesStore = Ext.create('App.store.glance.Sales'); 
+        console.log(level);        
+        console.log(brand);  
             salesStore.load({ 
                 callback: function () {
-                    salesStore.filterBy(function(rec) {  
-          
+                    salesStore.filterBy(function(rec) {   
+                        console.log(rec.get('HIER_LEVEL_CODE'));   
+                        console.log(rec.get('BRAND_CODE'));            
                         return rec.get('HIER_LEVEL_CODE') ==  level && rec.get('BRAND_CODE') ==  brand;                               
                     });               
                 }
