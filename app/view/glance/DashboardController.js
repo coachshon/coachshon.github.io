@@ -449,8 +449,7 @@ Ext.define('App.view.glance.DashboardController', {
                         sales.redraw();
                     }    
                 }
-            });        
-            console.log(salesStore);    
+            });           
             sales.setStore(salesStore);
            
             //set metric list summary data
