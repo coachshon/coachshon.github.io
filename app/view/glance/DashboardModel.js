@@ -5,7 +5,7 @@ Ext.define('App.view.glance.DashboardModel', {
         brand: null,
         level: null,
         title: null,
-        datamonth: null,
+        datamonth: 'Activity - Aug; Sales - Sep',
         benchmarks: [],
         isBenchmarksHidden: true
     },
