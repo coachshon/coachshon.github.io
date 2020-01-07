@@ -256,8 +256,8 @@ Ext.define("App.locale.Language", {
                 fr: "Fr FAQ"
             },
             home: {
-                en: "",
-                fr: ""
+                en: "Home",
+                fr: "Fr Home"
             },
             logout: {
                 en: "LOG OUT",
@@ -266,10 +266,6 @@ Ext.define("App.locale.Language", {
             permissions: {
                 en: "Permissions",
                 fr: "Fr Permissions"
-            },
-            uats: {
-                en: "Bug Report",
-                fr: "Fr Bug Report"
             }
         },
         permissions: {
@@ -304,34 +300,6 @@ Ext.define("App.locale.Language", {
             google: {
                 en: "GOOGLE SEARCH",
                 fr: "Fr GOOGLE SEARCH",
-            }
-        },
-        uat: {
-            wizard: {
-                comments: {
-                    en: "COMMENTS",
-                    fr: "Fr COMMENTS"
-                },
-                issue: {
-                    en: "ISSUE",
-                    fr: "Fr ISSUE"
-                },
-                status: {
-                    en: "STATUS",
-                    fr: "Fr STATUS"
-                },
-                steps: {
-                    en: "REPRODUCTION STEPS",
-                    fr: "Fr REPRODUCTION STEPS"
-                },
-                phantom: {
-                    en: "Add UAT Bug",
-                    fr: "Fr UAT Bug"
-                },
-                record: {
-                    en: "Edit UAT Bug",
-                    fr: "Fr Edit UAT Bug"
-                }
             }
         }
     }
