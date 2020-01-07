@@ -50,7 +50,8 @@ Ext.define('App.view.main.Menu', {
                 deselectable: false
             },
             itemTpl: [
-                '<span class="icon x-fa fa-{icon} fa-lg"></span>'
+                '<span class="icon x-fa fa-{icon} fa-lg"></span>',
+                '<span class="text">{text}</span>'
             ],
             listeners: {
                 childtap: 'onMenuChildTap'
