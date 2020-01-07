@@ -471,7 +471,7 @@ Ext.define('App.view.glance.DashboardController', {
             benchmarkStore = Ext.create('App.store.glance.Metrics');
             benchmarkStore.load({ 
                 callback: function () {
-                    summaryStore.filterBy(function(rec) {  
+                    benchmarkStore.filterBy(function(rec) {  
                         return rec.get('HIER_LEVEL_CODE') ==  cardBenchmark.code && rec.get('BRAND_CODE') ==  brand;                               
                     });               
                 }
