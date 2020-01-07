@@ -28,7 +28,6 @@ Ext.define('App.view.hco.ShowTools', {
 
     items: [{
         xtype: 'toolbar',   
-        //flex: 1,
         defaults: {
             handler: 'onToolIconTap'
         },
@@ -36,15 +35,11 @@ Ext.define('App.view.hco.ShowTools', {
             iconCls: 'x-fa fa-phone',
             ui: 'action-phone'
         }, {
-            iconCls: 'x-fa fa-info',
-            ui: 'action-info' 
+            iconCls: 'x-fa fa-map-marker',
+            ui: 'action-map'
         },{
             iconCls: 'x-fa fa-users',
             ui: 'action-links'
-        }, {
-            //hidden: true,
-            iconCls: 'x-fa fa-map-marker',
-            ui: 'action-map'
         }]
     }]
 });

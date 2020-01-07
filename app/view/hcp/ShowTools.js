@@ -27,24 +27,19 @@ Ext.define('App.view.hcp.ShowTools', {
     },
 
     items: [{
-        xtype: 'toolbar',   
-       // flex: 1,
+        xtype: 'toolbar',  
         defaults: {
             handler: 'onToolIconTap'
         },
         items: [{
             iconCls: 'x-fa fa-phone',
             ui: 'action-phone'
-        }, {            
-            iconCls: 'x-fa fa-info',
-            ui: 'action-info'
+        }, {
+            iconCls: 'x-fa fa-map-marker',
+            ui: 'action-map'
         },{
             iconCls: 'x-fa fa-hospital-o',
             ui: 'action-account'
-        }, {
-            //hidden: true,
-            iconCls: 'x-fa fa-map-marker',
-            ui: 'action-map'
         }]
     }]
 });

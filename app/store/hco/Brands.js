@@ -1,9 +1,9 @@
-Ext.define('App.store.hco.Brands', {
+Ext.define('App.store.hco.Sales', {
   extend: 'Ext.data.Store', 
-  alias: 'store.hco-brands',
+  alias: 'store.hco-sales',
   proxy: {
       type: 'ajax',
-      url: 'app/data/hco/Brands.json',
+      url: 'app/data/hco/Sales.json',
       reader:{
           type: 'json',
           rootProperty: 'd'
