@@ -44,17 +44,18 @@ Ext.define('App.view.glance.summary.SummaryController', {
                 var benchmark = newActiveItem.down('list'),
                     benchmarkStore = benchmark.getStore(),
                     level = newActiveItem.code,
-                    brand = glance.mybrand,
-                    params = {
-                        level: level,
-                        brand: brand
-                    };
+                    brand = glance.mybrand;
 
                 if (!benchmarkStore) {
                     benchmarkStore = Ext.create('App.store.glance.Metrics');
-                    benchmark.setStore(benchmarkStore);
-                    benchmarkStore.load({
-                        params: params
+            
+                    benchmarkStore.load({ 
+                        callback: function () {
+                            benchmarkStore.filterBy(function(rec) {  
+                                return rec.get('HIER_LEVEL_CODE') ==  level && rec.get('BRAND_CODE') ==  brand;                               
+                            });     
+                            benchmark.setStore(benchmarkStore);             
+                        }
                     });
                 }
             }

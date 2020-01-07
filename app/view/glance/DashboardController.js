@@ -407,10 +407,6 @@ Ext.define('App.view.glance.DashboardController', {
             vm = me.getViewModel(),
             level = vm.get('level'),
             brand = vm.get('brand'),
-            params = {
-                level: level,
-                brand: brand
-            },
             carousel = me.getView().lookupReference('dashboard-carousel'),
             card = carousel.getActiveItem(),
             summary = card.down('glance-summary-metrics').down('list'),
