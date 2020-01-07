@@ -18,8 +18,7 @@ Ext.define('App.view.widgets.ShowController', {
         if (!view.destroyed) {
             view.getScrollable().scrollTo(null, 0, true);
 
-            var affiliates= view.lookupReference('affiliates'),
-                gsearch = view.lookupReference('Gsearch');
+            var affiliates= view.lookupReference('affiliates');
 
             if (affiliates && !affiliates.isHidden()) {
                /* vm.getStore('affiliates').load({
@@ -28,10 +27,7 @@ Ext.define('App.view.widgets.ShowController', {
                 affiliates.hide();
             }
             
-            if (gsearch && !gsearch.isHidden()) {
-                //view.down('#ifrm').updateData({ search: record.get('NAME_DISPLAY') })
-                gsearch.hide();
-            }
+            
 
         }
     },

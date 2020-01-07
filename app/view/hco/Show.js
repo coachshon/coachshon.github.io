@@ -38,10 +38,6 @@ Ext.define('App.view.hco.Show', {
             items: {
                 left: {
                     items: {
-                        search: {
-                            hidden: true,
-                            xtype: 'google-search'
-                        },
                         affiliates: { 
                             hidden: true,
                             xtype: 'hco-affiliate',
