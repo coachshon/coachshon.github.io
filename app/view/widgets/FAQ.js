@@ -9,7 +9,6 @@ Ext.define('App.view.widgets.FAQ', {
         align: 'stretch',
         pack: 'start'
     },
-    //NOTE ************* using multiline format `` which falsely reads as errors 
     html:`
     <html><head>
     <title>FAQ</title>
@@ -65,11 +64,9 @@ pre[class*=language-] {
         
         <div class="classText">        
             <h1 id="faq-start">FAQ</h1>
-<p>Below are commonly asked questions about ONCOBot. If you
-have questions, or issues, please contact the <a href="mailto:Shauna.Hogan@pfizer.com?Subject=ONCOBot" target="_top">Developer's Desk</a>.</p>
-
+<p>Below are commonly asked questions about the app...
 <h3 class="temp-show member-expanded ">What is the purpose of the app?</h3>
-<p>The ONCOBot is a a reporting tool for Oncology accounts and contacts.</p>
+<p>The app is a reporting tool for accounts and contacts.</p>
 </p>
 
 <h3 class="temp-show member-expanded ">What are the data sources?</h3>
@@ -81,9 +78,6 @@ have questions, or issues, please contact the <a href="mailto:Shauna.Hogan@pfize
 </ul>
 </p>
 
-<h3>How does the login work?</h3>
-<p>ONCOBot uses Pfizer's LDAP directory along with a permissions table, managed by the tool owner, to verify user's NT ID, password and access level.</p>
-
 <h3>What about those icons?</h3>
 <div>
       <p><i class="fa fa-phone fa-2x"></i> Tap to call the associated phone number.</p>    
@@ -91,9 +85,9 @@ have questions, or issues, please contact the <a href="mailto:Shauna.Hogan@pfize
       <p><i class="fa fa-users fa-2x"></i> Tap to display an account's affiliated contacts.</p>
       <p><i class="fa fa-hospital-o fa-2x"></i> Tap to display a contact's affiliated account.</p>
 </div>
-<h3>How to "Appify" OncoBot?</h3>
+<h3>How to "Appify" the app?</h3>
 <div>
-      <p>OncoBot is a Progressive Web App, or PWA.  PWAs are installable and reside on the home screen with other native apps, so you can access OncoBot in one click.</p>
+      <p>The app is a Progressive Web App, or PWA.  PWAs are installable and reside on the home screen with other native apps, so you can access the app in one click.</p>
       <p>Follow the instructions below to add OncoBot to the home screen:</p>
       <ul>
         <li>In Safari browser, at the bottom of the screen, click the share icon (arrow pointing up from a square).

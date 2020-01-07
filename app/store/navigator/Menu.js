@@ -5,31 +5,31 @@ Ext.define('App.store.navigator.Menu', {
         id: 'home',
         xtype: 'home',
         icon: 'home',
-        text: ''
+        text: 'Home'
     }, {
         id: 'dashboard',
         xtype: 'dashboard',
         bgClr: '#8E44AD',
         icon: 'bar-chart',
-        text: ''
+        text: 'Dashboard'
     }, {
         id: 'accounts',
         xtype: 'hcobrowse',
         bgClr: '#02b685',
         icon: 'hospital-o',
-        text: ''
+        text: 'Accounts'
     }, {
         id: 'contacts',
         xtype: 'hcpbrowse',
         bgClr: '#ef5d18',
         icon: 'user-md',
-        text: ''
+        text: 'Contacts'
     }, {
         id: 'faq',
         xtype: 'faq',
         bgClr: '#a7fe33',
         icon: 'question',
-        text: ''
+        text: 'FAQ'
     }]
 });
 
