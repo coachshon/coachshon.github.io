@@ -41,7 +41,7 @@ Ext.define('App.view.hco.ShowController', {
                 //load the brands
                 storeBrands.load({  // onLoadData listener will create carousel cards
                         callback: function () {
-                            store.filterBy(function(rec) {  // apply level filter
+                            storeBrands.filterBy(function(rec) {  // apply level filter
                                 return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
                             }); 
                                        
