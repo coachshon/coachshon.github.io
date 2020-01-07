@@ -10,9 +10,7 @@ Ext.define('App.Application', {
         'App.locale.Language',        
         'App.view.viewport.ViewportController',
         'App.view.viewport.ViewportModel',        
-        'App.view.glance.navigation.Tree',
-        'App.view.widgets.IFrame',
-        'App.view.widgets.Gsearch'
+        'App.view.glance.navigation.Tree'
     ],
 
     profiles: [
@@ -29,8 +27,7 @@ Ext.define('App.Application', {
        'glance.Brands', 'glance.Levels', 'glance.Metrics', 'glance.Sales', 
        'hco.Accounts', 'hco.Affiliates', 'hco.Brands', 'hco.Filters', 'hco.Sales',
        'hcp.Brands', 'hcp.Contacts', 'hcp.Filters', 'hcp.PLPD', 
-       'lov.login.Languages','lov.permission.Groups', 'permission.Permissions','lov.uat.Status',
-       'uat.UATs'
+       'lov.login.Languages','lov.permission.Groups', 'permission.Permissions','lov.uat.Status'
     ],
 
     models: [

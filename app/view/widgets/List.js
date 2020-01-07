@@ -22,13 +22,6 @@ Ext.define('App.view.widgets.List', {
             docked: 'right',
             ui: 'flat'
         }, {
-            //hidden: true,
-            iconCls: 'x-fa fa-info',  //'x-fa fa-google',
-            userCls: 'x-item-no-tap',
-            docked: 'right',
-            ui: 'flat',
-            handler: 'onListIconTapInfo'
-        }, {
             iconCls: 'x-fa fa-phone',
             userCls: 'x-item-no-tap',
             docked: 'right',

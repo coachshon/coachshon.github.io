@@ -9,8 +9,7 @@ Ext.define('App.profile.Tablet', {
         home: 'App.view.phone.home.Home',
         login: 'App.view.phone.login.Login',
         main: 'App.view.phone.main.Main', //'App.view.tablet.main.Main',
-        permissionbrowse: 'App.view.phone.permission.Browse',
-        uatbrowse: 'App.view.phone.uat.Browse'
+        permissionbrowse: 'App.view.phone.permission.Browse'
     },
 
     isActive: function () {
