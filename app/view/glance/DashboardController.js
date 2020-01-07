@@ -437,6 +437,7 @@ Ext.define('App.view.glance.DashboardController', {
         if (!summaryStore) {           
             //set chart data
             var salesStore = Ext.create('App.store.glance.Sales');   
+            sales.setStore(salesStore);
             salesStore.load({ 
                 callback: function () {
                     salesStore.filterBy(function(rec) {              
@@ -450,10 +451,10 @@ Ext.define('App.view.glance.DashboardController', {
                     }    
                 }
             });           
-            sales.setStore(salesStore);
            
             //set metric list summary data
             summaryStore = Ext.create('App.store.glance.Metrics');
+            summary.setStore(summaryStore);  
             summaryStore.load({ 
                 callback: function () {
                     summaryStore.filterBy(function(rec) {  
@@ -461,7 +462,7 @@ Ext.define('App.view.glance.DashboardController', {
                     });               
                 }
             });
-            summary.setStore(summaryStore);            
+                      
           
         }
 
@@ -469,14 +470,14 @@ Ext.define('App.view.glance.DashboardController', {
         //set any benchmark summary data
         if (benchmark && !benchmarkStore) {        
             benchmarkStore = Ext.create('App.store.glance.Metrics');
+            benchmark.setStore(benchmarkStore);   
             benchmarkStore.load({ 
                 callback: function () {
                     benchmarkStore.filterBy(function(rec) {  
                         return rec.get('HIER_LEVEL_CODE') ==  cardBenchmark.code && rec.get('BRAND_CODE') ==  brand;                               
                     });               
                 }
-            });            
-            benchmark.setStore(benchmarkStore);            
+            });                     
         }
     },
 
