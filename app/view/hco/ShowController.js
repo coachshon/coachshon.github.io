@@ -48,7 +48,68 @@ Ext.define('App.view.hco.ShowController', {
                         }
                     }); 
 
-               
+                    vm.getStore('sales').load({
+                        callback: function (response) {
+        debugger;
+                            //console.log(response)
+                            if (response[0]) {                      
+                                //dynamically create chart series based on data returned...
+                                var data = response[0].data,
+                                    fields = ['id', 'DATE_KEY'],
+                                    colours = {                                
+                                        AROMASIN:'#00a950',
+                                        BESPONSA: '#a30054',
+                                        BOSULIF:'#f8971d',
+                                        IBRANCE:'#43278b',
+                                        INLYTA: '#c9cc31',
+                                        LORBRENA: '#f8a300',
+                                        SUTENT: '#cc004d',
+                                        TALZENNA: '#007ebb',
+                                        TORISEL: '#0093d0',
+                                        VIZIMPRO:'#7dba00',
+                                        XALKORI: '#2d4765' //'#152f4d'
+                                    },
+                                    myColours = [],
+                                    myFields = [],
+                                    mySeries = [];
+        
+                                // build new series
+                                for (var field in data) {
+                                    if (Ext.Array.indexOf(fields, field) === -1){  
+                                        //this is a brand field
+                                        mySeries.push({
+                                            type: 'line',
+                                            axis: 'left',
+                                            xField: 'DATE_KEY',
+                                            showInLegend: true,
+                                            marker: {
+                                                radius: 1,
+                                                lineWidth: 2,
+                                                stroke: (colours[field]) ? colours[field] : '#000',
+                                                fill: (colours[field]) ? colours[field] : '#000'
+                                            },
+                                            style: {
+                                                stroke: (colours[field]) ? colours[field] : '#000',
+                                                fill: (colours[field]) ? colours[field] : '#000'
+                                            },
+                                            yField: field,
+                                            title: field   //legend text
+                                        });
+                                        myColours.push(colours[field]);
+                                        myFields.push(field);
+                                    }
+                                }
+        
+                                chart = Ext.create('App.view.hco.sales.Chart');                        
+                                chart.setSeries(mySeries);
+                                chart.setColors(myColours);
+                                chart.getAxes()[0].setFields(myFields);
+                                panel.add(chart);
+                            }
+        
+                            panel.unmask();
+                        }
+                    });
                     panel.unmask();    
         }
         //load the record in 'App.view.widgets.ShowController'
