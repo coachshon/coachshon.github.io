@@ -60,7 +60,7 @@ Ext.define('App.view.hco.ShowController', {
                             if (r) {                      
                                 //dynamically create chart series based on data returned...
                                 var data = r.data,
-                                    fields = ['id', 'DATE_KEY'],
+                                    fields = ['id', 'ACCT_KEY', 'HIER_LEVEL_CODE', 'DATE_KEY'],
                                     colours = {                                
                                         BRAND_A:'#00a950',
                                         BRAND_B1: '#a30054',
@@ -80,7 +80,7 @@ Ext.define('App.view.hco.ShowController', {
         
                                 // build new series
                                 for (var field in data) {
-                                    if (Ext.Array.indexOf(fields, field) === -1){  
+                                    if (Ext.Array.indexOf(fields, field) === -1 && r.get(field) !== null){  
                                         //this is a brand field
                                         mySeries.push({
                                             type: 'line',
