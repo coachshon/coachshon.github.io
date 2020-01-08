@@ -45,16 +45,15 @@ Ext.define('App.view.hco.ShowController', {
                 //load the brands
                 storeBrands.load({  // onLoadData listener will create carousel cards
                         callback: function () {
-                            storeBrands.filterBy(function(rec) {  // apply level filter
+                            this.filterBy(function(rec) {  // apply level filter
                                 return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
-                            }); 
-                                       
+                            });                                        
                         }
                     }); 
                     storeSales.clearFilter(true);  // true to supress "datachanged"
                     storeSales.load({
                         callback: function () {
-                            storeSales.filterBy(function(rec) {  // apply level filter
+                            this.filterBy(function(rec) {  // apply level filter
                                 return rec.get('ACCT_KEY') == key;     
                             });
                             var r=storeSales.first();                            

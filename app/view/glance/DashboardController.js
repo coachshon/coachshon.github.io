@@ -197,7 +197,7 @@ Ext.define('App.view.glance.DashboardController', {
         // load store
         store.load({  // load listener in viewmodel - onLoadData
             callback: function () {
-                store.filterBy(function(rec) {  // apply filter
+                this.filterBy(function(rec) {  // apply filter
                     return rec.get('HIER_LEVEL_CODE') == level  && rec.get('BRAND_CODE') ==  brand;    
                 }); 
                            
@@ -436,16 +436,16 @@ Ext.define('App.view.glance.DashboardController', {
             var salesStore = Ext.create('App.store.glance.Sales');   
             salesStore.load({ 
                 callback: function () {
-                    salesStore.filterBy(function(rec) {              
+                    this.filterBy(function(rec) {              
                         return rec.get('HIER_LEVEL_CODE') ==  level && rec.get('BRAND_CODE') ==  brand;                               
                     });           
-                    if (salesStore.count() > 0) {
+                    if (this.count() > 0) {
                         sales.setHidden(false);
                         //ensure default sales period MONTH 
                         sales.setSprites(sprite);
                         sales.redraw();
                     }   
-                    sales.setStore(salesStore);
+                    sales.setStore(this);
                 }
             });           
            
@@ -453,10 +453,10 @@ Ext.define('App.view.glance.DashboardController', {
             summaryStore = Ext.create('App.store.glance.Metrics'); 
             summaryStore.load({ 
                 callback: function () {
-                    summaryStore.filterBy(function(rec) {  
+                    this.filterBy(function(rec) {  
                         return rec.get('HIER_LEVEL_CODE') ==  level && rec.get('BRAND_CODE') ==  brand;                               
                     });                       
-                    summary.setStore(summaryStore);             
+                    summary.setStore(this);             
                 }
             });
                       
@@ -470,10 +470,10 @@ Ext.define('App.view.glance.DashboardController', {
             
             benchmarkStore.load({ 
                 callback: function () {
-                    benchmarkStore.filterBy(function(rec) {  
+                    this.filterBy(function(rec) {  
                         return rec.get('HIER_LEVEL_CODE') ==  cardBenchmark.code && rec.get('BRAND_CODE') ==  brand;                               
                     });     
-                    benchmark.setStore(benchmarkStore);             
+                    benchmark.setStore(this);             
                 }
             });                     
         }
