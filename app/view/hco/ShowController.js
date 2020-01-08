@@ -53,7 +53,7 @@ Ext.define('App.view.hco.ShowController', {
                     storeSales.load({
                         callback: function () {
                             storeSales.filterBy(function(rec) {  // apply level filter
-                                return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
+                                return rec.get('ACCT_KEY') == key;     
                             });
                             var r=storeSales.first();
                             if (r) {                      

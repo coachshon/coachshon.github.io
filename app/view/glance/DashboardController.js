@@ -182,11 +182,7 @@ Ext.define('App.view.glance.DashboardController', {
     onLoadGlance: function (title, level, brand) {       
         var me = this,
            vm = me.getViewModel(),
-           store = vm.getStore('brands'),
-           params = {
-               level: level,
-               brand: brand
-           };
+           store = vm.getStore('brands');
 
 
         //set selected navigation...used in onLoadData
@@ -200,7 +196,12 @@ Ext.define('App.view.glance.DashboardController', {
         store.getProxy().abort(); //stop any previous calls     
         // load store
         store.load({  // load listener in viewmodel - onLoadData
-            params: params
+            callback: function () {
+                store.filterBy(function(rec) {  // apply filter
+                    return rec.get('HIER_LEVEL_CODE') == level  && rec.get('BRAND_CODE') ==  brand;    
+                }); 
+                           
+            }
         });
     },
 
