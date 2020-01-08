@@ -36,7 +36,9 @@ Ext.define('App.view.hco.ShowController', {
                     title = title + ' ' + ' (' + level + ')';
                 }
                 view.setTitle(title);
-
+                if (chart) {
+                    panel.remove(chart);
+                }
                 storeAffiliates.removeAll();
                 storeBrands.removeAll();
 
