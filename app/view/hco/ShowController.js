@@ -55,8 +55,7 @@ Ext.define('App.view.hco.ShowController', {
                             storeSales.filterBy(function(rec) {  // apply level filter
                                 return rec.get('ACCT_KEY') == key;     
                             });
-                            var r=storeSales.first();
-                            debugger;
+                            var r=storeSales.first();                            
                             if (r) {                      
                                 //dynamically create chart series based on data returned...
                                 var data = r.data,
