@@ -26,7 +26,9 @@ Ext.define('App.view.hco.ShowController', {
             key = record.get('ACCT_KEY'),
             levelUser = App.app.loggedInUser.HIER_LEVEL_JOIN,
             title = App.locale.Language.accounts.show.title[App.app.currentLocale],
-            storeBrands = vm.getStore('brands');
+            storeAffiliates= vm.getStore('affiliates'),
+            storeBrands = vm.getStore('brands'),
+            storeSales = vm.getStore('sales');
 
                 panel.mask({ xtype: 'loadmask' })
 
@@ -35,7 +37,7 @@ Ext.define('App.view.hco.ShowController', {
                 }
                 view.setTitle(title);
 
-                vm.getStore('affiliates').removeAll();
+                storeAffiliates.removeAll();
                 storeBrands.removeAll();
 
                 //load the brands
@@ -47,14 +49,16 @@ Ext.define('App.view.hco.ShowController', {
                                        
                         }
                     }); 
-
-                    vm.getStore('sales').load({
-                        callback: function (response) {
-        debugger;
-                            //console.log(response)
-                            if (response[0]) {                      
+                    storeSales.clearFilter(true);  // true to supress "datachanged"
+                    storeSales.load({
+                        callback: function () {
+                            storeSales.filterBy(function(rec) {  // apply level filter
+                                return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
+                            });
+                            var r=storeSales.first();
+                            if (r) {                      
                                 //dynamically create chart series based on data returned...
-                                var data = response[0].data,
+                                var data = r.data,
                                     fields = ['id', 'DATE_KEY'],
                                     colours = {                                
                                         AROMASIN:'#00a950',

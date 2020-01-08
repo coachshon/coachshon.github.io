@@ -22,7 +22,7 @@ Ext.define('App.view.glance.DashboardController', {
         //load the brands
         store.load({  // onLoadData listener will create carousel cards
             callback: function () {
-                store.filterBy(function(rec) {  // apply level filter
+                this.filterBy(function(rec) {  // apply level filter
                     return rec.get('LEVEL_CODE') ==  App.app.loggedInUser.HIER_LEVEL_JOIN;  
                     //LEVEL_CODE: "NATIONAL",                  
                 }); 

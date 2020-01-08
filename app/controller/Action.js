@@ -147,10 +147,12 @@ Ext.define('App.controller.Action', {
                 item[visibility]();
 
                 if(visibility=='show' && store.count()==0){
+                    var key= record.get('ACCT_KEY');
                     store.load({
-                        params: {
-                            key: record.get('ACCT_KEY'),
-                            level: record.get('HIER_LEVEL_CODE')
+                        callback: function () {
+                            store.filterBy(function(rec) {  
+                                return  rec.get('ACCT_KEY') == key;     
+                            });                                        
                         }
                     });
                 }
