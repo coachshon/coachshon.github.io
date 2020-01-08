@@ -56,22 +56,23 @@ Ext.define('App.view.hco.ShowController', {
                                 return rec.get('ACCT_KEY') == key;     
                             });
                             var r=storeSales.first();
+                            debugger;
                             if (r) {                      
                                 //dynamically create chart series based on data returned...
                                 var data = r.data,
                                     fields = ['id', 'DATE_KEY'],
                                     colours = {                                
-                                        AROMASIN:'#00a950',
-                                        BESPONSA: '#a30054',
-                                        BOSULIF:'#f8971d',
-                                        IBRANCE:'#43278b',
-                                        INLYTA: '#c9cc31',
-                                        LORBRENA: '#f8a300',
-                                        SUTENT: '#cc004d',
-                                        TALZENNA: '#007ebb',
-                                        TORISEL: '#0093d0',
-                                        VIZIMPRO:'#7dba00',
-                                        XALKORI: '#2d4765' //'#152f4d'
+                                        BRAND_A:'#00a950',
+                                        BRAND_B1: '#a30054',
+                                        BRAND_B2:'#f8971d',
+                                        BRAND_C:'#43278b',
+                                        BRAND_D: '#c9cc31',
+                                        BRAND_E: '#f8a300',
+                                        BRAND_F: '#cc004d',
+                                        BRAND_G: '#007ebb',
+                                        BRAND_H: '#0093d0',
+                                        BRAND_I:'#7dba00',
+                                        BRAND_J: '#2d4765' //'#152f4d'
                                     },
                                     myColours = [],
                                     myFields = [],
