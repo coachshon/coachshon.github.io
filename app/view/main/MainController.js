@@ -62,7 +62,6 @@ Ext.define('App.view.main.MainController', {
             item = container.add(Ext.apply({ viewId: id }, config));
         }
         if (Ext.isDefined(item.config.route)) {
-            debugger;
             item.setRoute(route);
         }
 
@@ -70,7 +69,6 @@ Ext.define('App.view.main.MainController', {
         if (reset && Ext.isFunction(item.reset)) {
             item.reset();
         }
-        debugger;
         return item;
     },
     
