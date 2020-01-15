@@ -46,8 +46,9 @@ Ext.define('App.view.glance.sales.Chart', {
     axes: [{
         type: 'numeric',
         position: 'left',
+        minimum: 0,
         title: false,
-        fields: ['SALES'],
+        fields: ['SALES', 'QUOTA'],
         renderer: function (axis, value) {
             var val = Math.abs(value);
             var d = val > 999999 ? 1000000 : val > 999 ? 1000 : 1,

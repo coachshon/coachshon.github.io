@@ -9,15 +9,11 @@ Ext.define('App.view.hcp.ShowController', {
             var me = this,
                view = me.getView(),
                vm = me.getViewModel(),
-               store = vm.getStore('brands'),
+               storeBrands = vm.getStore('brands'),
                storePLPD = vm.getStore('brandsPLPD'),
                level = record.get('HIER_LEVEL_CODE'),
                key = record.get('CUST_KEY'),
                levelUser = App.app.loggedInUser.HIER_LEVEL_JOIN,
-               params = {
-                   key: key,
-                   level: level
-               },
                title = App.locale.Language.contacts.show.title[App.app.currentLocale];
            
             if (level !='NATIONAL' && level !== levelUser) {
@@ -25,10 +21,14 @@ Ext.define('App.view.hcp.ShowController', {
             }
             view.setTitle(title);
             
-            store.removeAll();
-            store.load({
-                params: params
-            });
+            storeBrands.removeAll();
+            storeBrands.load({
+                    callback: function () {
+                        this.filterBy(function(rec) { 
+                            return rec.get('HIER_LEVEL_CODE') == level  && rec.get('CUST_KEY') == key;     
+                        });                                        
+                    }
+                }); 
             
             storePLPD.removeAll();    
             storePLPD.load({

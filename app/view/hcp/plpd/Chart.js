@@ -14,6 +14,7 @@ Ext.define('App.view.hcp.plpd.Chart', {
     axes: [{
         type: 'numeric',
         position: 'left',
+        minimum: 0,
         fields: []
     }, {
         type: 'category',

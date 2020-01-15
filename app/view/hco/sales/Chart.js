@@ -15,6 +15,7 @@ Ext.define('App.view.hco.sales.Chart', {
     axes: [{
         type: 'numeric',
         position: 'left',
+        minimum: 0,
         fields: [],
         renderer: function (axis, value) {
             var val = Math.abs(value);
