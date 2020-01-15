@@ -39,11 +39,17 @@ Ext.define('App.view.hco.ShowController', {
                 if (chart) {
                     panel.remove(chart);
                 }
-                storeAffiliates.removeAll();
-                storeBrands.removeAll();
+                //storeAffiliates.removeAll();
+                //storeBrands.removeAll();
 
                 //load the brands
-                storeBrands.load(); 
+                storeBrands.load({  // onLoadData listener will create carousel cards
+                    callback: function () {
+                        this.filterBy(function(rec) {  // apply level filter
+                            return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
+                        });                                        
+                    }
+                });
                    
                 panel.unmask();    
         }
