@@ -5,11 +5,7 @@ Ext.define('App.view.widgets.Brand', {
         items: [{
             xtype: 'button',
             userCls: 'x-item-no-tap',
-            ui: 'block',
-            bind: {
-                //text: '{brands.totalCount? brands.totalCount : "0"}'
-                text: '{affiliatecount}'
-            }
+            ui: 'block'
         }]
     }
 });
