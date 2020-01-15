@@ -4,9 +4,7 @@ Ext.define('App.view.hcp.Show', {
     xtype: 'contactshow',
     requires: [
      'App.view.hcp.Brand',
-     'App.view.hcp.plpd.PLPD',
-     'App.view.hcp.plpd.Carousel',
-     'App.view.hcp.plpd.Panel',
+    
      'App.view.hcp.ShowController',
      'App.view.hcp.ShowModel',
      'App.view.hcp.ShowTools'
@@ -43,17 +41,9 @@ Ext.define('App.view.hcp.Show', {
             items: {
                 left: {
                     items: {
-                        search: {
-                            hidden: true,
-                            xtype: 'google-search'
-                        },
                         brands: {
                             xtype: 'hcp-brand',
                             reference: 'brands'
-                        },
-                        plpd: {
-                            xtype: 'hcp-plpd',
-                            reference: 'plpd'
                         }
                     }
                 }
