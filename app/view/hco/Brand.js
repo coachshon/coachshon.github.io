@@ -9,7 +9,7 @@ Ext.define('App.view.hco.Brand', {
                 
         me.setItems([{
             xtype: 'dataview',
-            bind: '{brands}',
+           // bind: '{brands}',
             ui: 'details',
             minHeight: 80,
             itemTpl: [

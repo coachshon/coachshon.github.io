@@ -19,7 +19,8 @@ Ext.define('App.view.hco.ShowController', {
         var me = this,
             view = me.getView(),
             vm = me.getViewModel(),
-            references = me.getReferences(),
+            references = me.getReferences(),            
+            brands = references.brands,
             panel = references.sales,
             chart = references.saleschart,
             level = record.get('HIER_LEVEL_CODE'),
@@ -43,11 +44,12 @@ Ext.define('App.view.hco.ShowController', {
                 //storeBrands.removeAll();
 
                 //load the brands
-                storeBrands.load({  // onLoadData listener will create carousel cards
+                storeBrands.load({  
                     callback: function () {
                         this.filterBy(function(rec) {  // apply level filter
                             return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
-                        });                                        
+                        });   
+                        brands.down('dataview').setStore(this);                                     
                     }
                 });
                    
