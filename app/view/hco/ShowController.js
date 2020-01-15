@@ -50,7 +50,7 @@ Ext.define('App.view.hco.ShowController', {
                         this.filterBy(function(rec) {  // apply level filter
                             return rec.get('HIER_LEVEL_CODE') == level  && rec.get('ACCT_KEY') == key;     
                         });   
-                       // brands.down('dataview').setStore(this);                                     
+                       brands.down('dataview').setStore(this);                                     
                     }
                 });
                    
