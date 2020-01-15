@@ -7,7 +7,8 @@ Ext.define('App.view.widgets.Brand', {
             userCls: 'x-item-no-tap',
             ui: 'block',
             bind: {
-                text: '{brands.totalCount? brands.totalCount : "0"}'
+                //text: '{brands.totalCount? brands.totalCount : "0"}'
+                text: '{affiliatecount}'
             }
         }]
     }

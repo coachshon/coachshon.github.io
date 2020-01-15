@@ -1,7 +1,9 @@
 Ext.define('App.view.hco.ShowModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.hcoshow',
-
+    data: {
+        affiliatecount: 0
+    },
     stores: {   
         brands: {
             type: 'hco-brands'
