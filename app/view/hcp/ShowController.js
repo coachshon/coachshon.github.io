@@ -16,12 +16,14 @@ Ext.define('App.view.hcp.ShowController', {
                levelUser = App.app.loggedInUser.HIER_LEVEL_JOIN,
                title = App.locale.Language.contacts.show.title[App.app.currentLocale];
            
+            panel.mask({ xtype: 'loadmask' })
+
             if (level !='NATIONAL' && level !== levelUser) {
                 title = title + ' ' + ' (' + level + ')';
             }
             view.setTitle(title);
             
-            storeBrands.removeAll();
+            storeBrands.clearFilter(true);  // true to supress "datachanged"
             storeBrands.load({
                     callback: function () {
                         this.filterBy(function(rec) { 
@@ -30,15 +32,14 @@ Ext.define('App.view.hcp.ShowController', {
                     }
                 }); 
             
-            storePLPD.removeAll();    
+            storePLPD.clearFilter(true);  // true to supress "datachanged"
             storePLPD.load({
                 callback: function () {
+                    this.filterBy(function(rec) {  // apply level filter
+                        return rec.get('HIER_LEVEL_CODE') == level  && rec.get('CUST_KEY') == key;     
+                    });  
                     me.onLoadData(this);  // build carousel of brand PLPD data
-                },
-                params: {
-                    key: key,
-                    level: level,
-                    plpd: 'Y'
+                    panel.unmask();
                 }
             });
 
@@ -124,14 +125,18 @@ Ext.define('App.view.hcp.ShowController', {
                        key: key
                    },
                    chartStore = chartStore = Ext.create('App.store.hcp.PLPD');
-
-                chart.setStore(chartStore);
+                  
+                chartStore.clearFilter(true);  // true to supress "datachanged"
+                
                 chartStore.load({
                     callback: function () {
+                        this.filterBy(function(rec) {  // apply level filter
+                            return rec.get('BRAND_CODE') == level  && rec.get('CUST_KEY') == key;     
+                        }); 
+                        chart.setStore(chartStore);
                         me.setChartSeries(this, chart);
                         panel.unmask();
-                    },
-                    params: params
+                    }
                 });;
 
             }
