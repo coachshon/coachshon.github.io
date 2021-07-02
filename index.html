@@ -4,13 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <style>
         video::-webkit-media-controls-play-button{ display: flex !important;}
     </style>
  </head>
 <body>
-<input type="file" accept="video/*" capture="camera" id="recorder">
+ <label for="recorder"><i class="fa fa-camera fa-3x"></i></label>
+<input type="file" accept="video/*" capture="camera" id="recorder" style="visibility:hidden;">
 <video id="player" controls></video>
 <script>
   var recorder = document.getElementById('recorder');
