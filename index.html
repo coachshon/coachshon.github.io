@@ -1,211 +1,322 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Shon Hogan</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/media-selection.js"></script>
+    <script type="text/javascript" src="js/console.js"></script>
+    <script type="text/javascript" src="js/projects/projects.js"></script>
+    <script
+      type="text/javascript"
+      src="js/projects/projects-cards-updater.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/projects/languages-field.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/cards.css" />
+    <link rel="stylesheet" type="text/css" href="styles/timeline.css" />
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="styles/console.css" />
+    <link rel="stylesheet" type="text/css" href="styles/projects.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<title>Shon Hogan</title>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/media-selection.js"></script>
-	<script type="text/javascript" src="js/console.js"></script>
-	<script type="text/javascript" src="js/projects/projects.js"></script>
-	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
-	<script type="text/javascript" src="js/projects/languages-field.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/cards.css">
-	<link rel="stylesheet" type="text/css" href="styles/timeline.css">
-	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
-	<link rel="stylesheet" type="text/css" href="styles/console.css">
-	<link rel="stylesheet" type="text/css" href="styles/projects.css">
-	<link rel="icon" href="assets/favicon.ico">
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <nav id="mysidenav" class="sidenav">
+      <div id="mysidenavcontent" class="sidenavcontent">
+        <img
+          src="assets/profile_picture_adjusted.png"
+          alt="Profile picture"
+          class="profile-picture"
+          loading="lazy"
+        />
+        <p class="sidebarname">Shon Hogan</p>
+        <hr />
+        <p class="sidebarcitation">"Better Than a Jar of Honey."</p>
+        <p class="sidebarauthor">- Winnie the Pooh</p>
+        <hr />
+        <div class="row">
+          <div class="column">
+            <a href="https://www.linkedin.com/in/shon/" target="_blank">
+              <img
+                id="linkedin"
+                src="assets/medias/linkedin.png"
+                onMouseOver="selected(this)"
+                onMouseOut="unselected(this)"
+                alt="Go to LinkedIn profile"
+                class="mediaicon"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://github.com/coachshon" target="_blank">
+              <img
+                id="github"
+                src="assets/medias/github.png"
+                onMouseOver="selected(this)"
+                onMouseOut="unselected(this)"
+                alt="Go to GitHub profile"
+                class="mediaicon"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://www.facebook.com/shon/" target="_blank">
+              <img
+                id="facebook"
+                src="assets/medias/facebook.png"
+                onMouseOver="selected(this)"
+                onMouseOut="unselected(this)"
+                alt="Go to Facebook profile"
+                class="mediaicon"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://www.instagram.com/shon/" target="_blank">
+              <img
+                id="instagram"
+                src="assets/medias/instagram.png"
+                onMouseOver="selected(this)"
+                onMouseOut="unselected(this)"
+                alt="Go to Instagram profile"
+                class="mediaicon"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
 
-<body>
-	<nav id="mysidenav" class="sidenav">
-		<div id="mysidenavcontent" class="sidenavcontent">
-			<img src="assets/profile_picture_adjusted.png" alt="Profile picture" class="profile-picture" loading="lazy">
-			<p class="sidebarname">Shon Hogan</p>
-			<hr>
-			<p class="sidebarcitation">"Better Than a Jar of Honey."</p>
-			<p class="sidebarauthor">- Winnie the Pooh</p>
-			<hr>
-			<div class="row">
-				<div class="column">
-					<a href="https://www.linkedin.com/in/shon/" target="_blank">
-						<img id="linkedin" src="assets/medias/linkedin.png" onMouseOver="selected(this)"
-							onMouseOut="unselected(this)" alt="Go to LinkedIn profile" class="mediaicon" loading="lazy"> 
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://github.com/coachshon" target="_blank">
-						<img id="github" src="assets/medias/github.png" onMouseOver="selected(this)"
-							onMouseOut="unselected(this)" alt="Go to GitHub profile" class="mediaicon" loading="lazy">
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://www.facebook.com/shon/" target="_blank">
-						<img id="facebook" src="assets/medias/facebook.png" onMouseOver="selected(this)"
-							onMouseOut="unselected(this)" alt="Go to Facebook profile" class="mediaicon" loading="lazy">
-					</a>
-				</div>
-				<div class="column">
-					<a href="https://www.instagram.com/shon/" target="_blank">
-						<img id="instagram" src="assets/medias/instagram.png" onMouseOver="selected(this)"
-							onMouseOut="unselected(this)" alt="Go to Instagram profile" class="mediaicon" loading="lazy">
-					</a>
-				</div>
-			</div>
+        <div class="nav_btns">
+          <button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button
+          ><br />
+          <button id="btn_myskills" onClick="navscroll(this)">SKILLS</button
+          ><br />
+          <button id="btn_work" onClick="navscroll(this)">EXPERIENCE</button
+          ><br />
+          <button id="btn_education" onClick="navscroll(this)">EDUCATION</button
+          ><br />
+          <button id="btn_projects" onClick="navscroll(this)">PROJECTS</button
+          ><br />
+        </div>
 
-			<div class="nav_btns">
-				<button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button><br>
-				<button id="btn_myskills" onClick="navscroll(this)">SKILLS</button><br>
-				<button id="btn_work" onClick="navscroll(this)">EXPERIENCE</button><br>
-				<button id="btn_education" onClick="navscroll(this)">EDUCATION</button><br>
-				<button id="btn_projects" onClick="navscroll(this)">PROJECTS</button><br>
-			</div>
-			
-			<div class="nav_bottom_btns">
-				<div class="column_button">
-					<button onclick="location.href='mailto:shon.hogan@gmail.com'" id="btn_contactme">CONTACT ME</button>
-				</div>
-				<div class="column_button">
-					<button onclick="location.href='assets/cv.pptx'" target="_blank" id="btn_viewresume">GET MY CV</button>
-				</div>							
-			</div>
+        <div class="nav_bottom_btns">
+          <div class="column_button">
+            <button
+              onclick="location.href='mailto:shon.hogan@gmail.com'"
+              id="btn_contactme"
+            >
+              CONTACT ME
+            </button>
+          </div>
+          <div class="column_button">
+            <button
+              onclick="location.href='assets/cv.pptx'"
+              target="_blank"
+              id="btn_viewresume"
+            >
+              GET MY CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mycontent" class="content">
+      <section id="about_me" class="scroll-element">
+        <div class="title">
+          <h1 class="firstname">SHON</h1>
+          <h1 class="lastname">HOGAN</h1>
+        </div>
+        <div class="container">
+          <img
+            id="console"
+            class="console_img"
+            src="assets/console.png"
+            loading="lazy"
+          />
+          <div id="typedtext" class="typedtextclass"></div>
+        </div>
+      </section>
 
-		</div>
-	</nav>
-	<div id="mycontent" class="content">
-		<section id="about_me" class="scroll-element">
-			<div class="title">
-				<h1 class="firstname">
-					SHON
-				</h1>
-				<h1 class="lastname">
-					HOGAN
-				</h1>
-			</div>
-			<div class="container">
-				<img id="console" class="console_img" src="assets/console.png" loading="lazy">
-				<div id="typedtext" class="typedtextclass"> </div>
-			</div>
-		</section>
+      <section id="my_skills" class="aftertw scroll-element">
+        <h1 class="titlehead">SKILLS</h1>
+        <div class="skill-cards">
+          <div class="card">
+            <h3 class="card_title">Frontend Developer</h3>
+            <img
+              alt="Frontend"
+              src="assets/cards/frontend.png"
+              class="card_logo"
+              loading="lazy"
+            />
+            <ul class="card_list">
+              <li>UI/UX design principles</li>
+              <li>Responsive web design techniques</li>
+              <li>JavaScript frameworks/libraries experienced</li>
+              <li>React, Next.js, Auth.js, ext.js, Tailwindcss, MUI, PWA...</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card_title">Backend Developer</h3>
+            <img
+              alt="Backend"
+              src="assets/cards/nodejs.png"
+              class="card_logo"
+              loading="lazy"
+            />
+            <ul class="card_list">
+              <li>Database systems: SQL Server,Oracle, PostgreSQL, NoSQL</li>
+              <li>
+                Object-Relational Mapping frameworks: .NET EF, Django ORM, Odoo
+                ORM
+              </li>
+              <li>API Design: RESTful, GraphQL</li>
+              <li>
+                Programming Languages: Node.js (JavaScript/TypeScript), Python,
+                C#...
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card_title">DevOps Tools</h3>
+            <img
+              alt="DevOps"
+              src="assets/cards/google-cloud-icon.png"
+              class="card_logo"
+              loading="lazy"
+            />
+            <ul class="card_list">
+              <li>Version control: Git, GitHub</li>
+              <li>Testing: Jest, Playwright, Happo</li>
+              <li>CI/CD: GitHub actions .yaml</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card_title">Team Professional</h3>
+            <img
+              alt="Teamwork"
+              src="assets/cards/teamworks.png"
+              class="card_logo"
+              loading="lazy"
+            />
+            <ul class="card_list">
+              <li>Agile development</li>
+              <li>Cross-functional teams</li>
+              <li>Communication and collaboration</li>
+              <li>
+                Architecting, problem-solving, troubleshooting, monitoring
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-		<section id="my_skills" class="aftertw scroll-element">
-			<h1 class="titlehead">
-				SKILLS
-			</h1>
-			<div class="skill-cards">
-				<div class="card">
-					<h3 class="card_title">Frontend Developer</h3>
-					<img alt="Frontend" src="assets/cards/frontend.png"
-						class="card_logo" loading="lazy"/>
-					<ul class="card_list">
-						<li>UI/UX design principles</li>
-						<li>Responsive web design techniques</li>
-						<li>JavaScript frameworks/libraries experienced</li>
-						<li>React, Next.js, Auth.js, ext.js, Tailwindcss, MUI, PWA...</li>
-					</ul>
-				</div>
-				<div class="card">
-					<h3 class="card_title">Backend Developer</h3>
-					<img alt="Backend" src="assets/cards/nodejs.png" class="card_logo" loading="lazy"/>
-					<ul class="card_list">
-						<li>Database systems: SQL Server,Oracle, PostgreSQL, NoSQL</li>
-						<li>Object-Relational Mapping frameworks: .NET EF, Django ORM, Odoo ORM</li>
-						<li>API Design: RESTful, GraphQL</li>
-						<li>Programming Languages: Node.js (JavaScript/TypeScript), Python, C#...</li>
-					</ul>
-				</div>
-				<div class="card">
-					<h3 class="card_title">DevOps Tools</h3>
-					<img alt="DevOps" src="assets/cards/google-cloud-icon.png" class="card_logo" loading="lazy"/>
-					<ul class="card_list">
-						<li>Version control: Git, GitHub</li>
-						<li>Testing: Jest, Playwright, Happo</li>
-						<li>CI/CD: GitHub actions .yaml</li>
-					</ul>
-				</div>
-				<div class="card">
-					<h3 class="card_title">Team Professional</h3>
-					<img alt="Teamwork" src="assets/cards/teamworks.png" class="card_logo" loading="lazy"/>
-					<ul class="card_list">
-						<li>Agile development</li>
-						<li>Cross-functional teams</li>
-						<li>Communication and collaboration</li>
-						<li>Architecting, problem-solving, troubleshooting, monitoring</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section id="work_experience" class="aftertw scroll-element">
-
-			<h1 class="titlehead">
-				EXPERIENCE
-			</h1>
-			<div class="we_timeline">
-				<div class="we_container left">
-					<div class="we_date">Dec 2022 - Now</div>
-					<img class="icon" alt="Button Logo" src="assets/timeline/button.svg" loading="lazy"/>
-					<div class="we_content">
-						<h2>Senior FullStack Developer</h2>
-						<h3>Consulting</h3>
-					</div>
-				</div>
-				<div class="we_container right">
-					<div class="we_date">Sept 2010 - Aug 2022</div>
-					<img class="icon" alt="Pfizer Logo" src="assets/timeline/pfizer.svg" loading="lazy"/>
-					<div class="we_content">
-						<h2>Software Developer, .NET</h2>
-						<h3>Business Technology, Digital Solutions</h3>
-					</div>
-				</div>
-				<div class="we_container left">
-					<div class="we_date">Aug 2005 - Aug 2010</div>
-					<img class="icon" alt="GM Logo" src="assets/timeline/gm.png" loading="lazy"/>
-					<div class="we_content">
-						<h2>Software Developer, Lotus Notes/Domino</h2>
-						<h3>General Motor Company</h3>
-					</div>
-				</div>
-				<div class="we_container right">
-					<div class="we_date">Dec 2000 - Jul 2005</div>
-					<img class="icon" alt="CN Logo" src="assets/timeline/cn.png" loading="lazy"/>
-					<div class="we_content">
-						<h2>Software Developer, Lotus Notes/Domino</h2>
-						<h3>CN Transportation Services</h3>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="education" class="aftertw scroll-element">
-			<h1 class="titlehead">
-				EDUCATION
-			</h1>
-			<div class="we_timeline">
-				<div class="we_container left">
-					<div class="we_date_education">2023</div>
-					<img class="icon" alt="gcp" src="assets/timeline/gcp-dev.png" loading="lazy"/>
-					<div class="we_content">
-						<h2>Certified Cloud Developer</h2>
-						<h3>Google Cloud</h3>
-					</div>
-				</div>
-				<div class="we_container right">
-					<div class="we_date_education">2000</div>
-					<img class="icon" alt="Concordia Logo" src="assets/timeline/conu.jpg" loading="lazy"/>
-					<div class="we_content">
-						<h2>B.Sc. Exercise Science</h2>
-						<h3>Concordia University</h3>
-					</div>
-				</div>
-			</div>
-		</section>
-
-	</div>	
-</body>
-
+      <section id="work_experience" class="aftertw scroll-element">
+        <h1 class="titlehead">EXPERIENCE</h1>
+        <div class="we_timeline">
+          <div class="we_container left">
+            <div class="we_date">Dec 2022 - Now</div>
+            <img
+              class="icon"
+              alt="Button Logo"
+              src="assets/timeline/button.svg"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>Senior FullStack Developer</h2>
+              <h3>Consulting</h3>
+            </div>
+          </div>
+          <div class="we_container right">
+            <div class="we_date">Sept 2010 - Aug 2022</div>
+            <img
+              class="icon"
+              alt="Pfizer Logo"
+              src="assets/timeline/pfizer.svg"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>Software Developer, .NET</h2>
+              <h3>Business Technology, Digital Solutions</h3>
+            </div>
+          </div>
+          <div class="we_container left">
+            <div class="we_date">Aug 2005 - Aug 2010</div>
+            <img
+              class="icon"
+              alt="GM Logo"
+              src="assets/timeline/gm.png"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>Software Developer, Lotus Notes/Domino</h2>
+              <h3>General Motor Company</h3>
+            </div>
+          </div>
+          <div class="we_container right">
+            <div class="we_date">Dec 2000 - Jul 2005</div>
+            <img
+              class="icon"
+              alt="CN Logo"
+              src="assets/timeline/cn1.png"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>Software Developer, Lotus Notes/Domino</h2>
+              <h3>CN Transportation Services</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="aftertw scroll-element">
+        <h1 class="titlehead">EDUCATION</h1>
+        <div class="we_timeline">
+          <div class="we_container left">
+            <div class="we_date_education">2023</div>
+            <img
+              class="icon"
+              alt="gcp"
+              src="assets/timeline/gcp-dev.png"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>Certified Cloud Developer</h2>
+              <h3>Google Cloud</h3>
+            </div>
+          </div>
+          <div class="we_container right">
+            <div class="we_date_education">2000</div>
+            <img
+              class="icon"
+              alt="Concordia Logo"
+              src="assets/timeline/conu.jpg"
+              loading="lazy"
+            />
+            <div class="we_content">
+              <h2>B.Sc. Exercise Science</h2>
+              <h3>Concordia University</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
