@@ -1,0 +1,156 @@
+.sidenav {
+  height: 100%;
+  width: 300px;
+  padding: 20px;
+  background-color: var(--color1);
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: var(--color5);
+  text-align: center;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+.sidenavcontent {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 250px;
+}
+
+.profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid var(--color2);
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.sidebarname {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20pt;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.sidebarcitation {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12pt;
+  margin: 0pt;
+}
+
+.sidebarauthor {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 8pt;
+  text-align-last: right;
+  margin-top: 3pt;
+  margin-right: 10pt;
+  margin-left: 10pt;
+  margin-bottom: 0pt;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mediaicon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--color5);
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav_btns {
+  margin: 20px 0px;
+  width: inherit;
+}
+
+.nav_btns button {
+  width: inherit;
+  height: 35px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: var(--color4);
+  background-color: var(--color1);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: background-color 0.25s ease;
+}
+
+.nav_btns button:hover {
+  background-color: var(--color2);
+}
+
+.nav_bottom_btns {
+  padding: 10px;
+}
+
+.nav_bottom_btns button {
+  display: inline;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  height: 30px;
+  width: 80%;
+  min-width: 100px;
+  border-radius: 5px;
+  background: var(--color2);
+  border: none;
+  color:  var(--color4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav_bottom_btns button:hover {
+  color: var(--color2);
+  background: var(--color4);
+}
+
+.column_button {
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-device-width: 800px) {
+  .nav_btns button {
+   font-size: 15pt;  
+   height: 45px;
+  }
+
+  .sidebarcitation {
+    font-size: 14pt;
+  }
+
+  .sidebarauthor {
+    font-size: 12pt;
+  }
+}

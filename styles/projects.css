@@ -1,0 +1,192 @@
+.projects-cards {
+  display: grid;
+  position: relative;
+  margin: 25pt 10%;
+  grid-template-columns: repeat(7, 120px);
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  
+}
+
+input[type=radio] {
+  display: none;
+}
+
+#left_slider:checked ~ .projects-cards #right_card, 
+#center_slider:checked ~ .projects-cards #left_card, 
+#right_slider:checked ~ .projects-cards #center_card {
+  transform: translatex(-10%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+#left_slider:checked ~ .projects-cards #center_card, 
+#center_slider:checked ~ .projects-cards #right_card, 
+#right_slider:checked ~ .projects-cards #left_card {
+  transform: translatex(10%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  grid-column-start: 4;
+  grid-column-end: 8;
+}
+
+#left_slider:checked ~ .projects-cards #left_card, 
+#center_slider:checked ~ .projects-cards #center_card, 
+#right_slider:checked ~ .projects-cards #right_card {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  cursor: initial;
+}
+
+#left_slider:not(:checked)~ .projects-cards #left_card_button {
+  display: none;
+}
+
+#center_slider:not(:checked)~ .projects-cards #center_card_button {
+  display: none;
+}
+
+#right_slider:not(:checked)~ .projects-cards #right_card_button {
+  display: none;
+}
+
+
+.projects-cards .left_card,
+.projects-cards .center_card,
+.projects-cards .right_card {
+  grid-row: 1;  
+}
+
+
+.projects-cards .card {  
+  display: block;
+  height: 10rem; 
+  border: 2px solid var(--color4);
+  background-color: var(--color4);
+  border-radius: 5px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: transform 1s ease;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.projects-cards .card_title {
+  display: inline;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  color: var(--color1);
+  font-size: 100%;
+  width: auto;
+  vertical-align: middle;
+  line-height: 1rem;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.projects-cards .card_description {
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--color1);
+  font-size: 100%;
+  width: minmax(max-content, 150px);
+  vertical-align: middle;
+  line-height: 1.rem;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.projects-cards .card_logo {
+  height: 5rem;
+  vertical-align: middle;
+  float: right;
+  margin: 25px;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.projectsbutton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  outline: none;
+  height: 1.75rem;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: var(--color4);
+  border: 1px solid var(--color3);
+  color: var(--color3);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.projectsbutton:hover {
+  color: var(--color4);
+  background: var(--color3);
+}
+.projectsbutton:active {
+  letter-spacing: 2px;
+}
+.projectsbutton:after {
+  content: "OPEN IN GITHUB";
+}
+
+.projects-languages {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color5);
+  padding: 10pt;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.projects-languages:empty {
+  visibility: hidden;
+}
+
+.lang-column-default {
+  float: left;
+  margin: 0pt 5pt;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 1100px) {
+  .projects-cards {
+    grid-template-columns: repeat(7, 90px);
+  }
+
+  .projects-cards .card {  
+    height: 14rem; 
+  }
+}

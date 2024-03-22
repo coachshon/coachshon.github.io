@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shon Hogan</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/media-selection.js"></script>
+	<script type="text/javascript" src="js/console.js"></script>
+	<script type="text/javascript" src="js/projects/projects.js"></script>
+	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
+	<script type="text/javascript" src="js/projects/languages-field.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/cards.css">
+	<link rel="stylesheet" type="text/css" href="styles/timeline.css">
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="styles/console.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="mysidenav" class="sidenav">
+		<div id="mysidenavcontent" class="sidenavcontent">
+			<img src="assets/profile_picture_adjusted.png" alt="Profile picture" class="profile-picture" loading="lazy">
+			<p class="sidebarname">Shon Hogan</p>
+			<hr>
+			<p class="sidebarcitation">"Better Than a Jar of Honey."</p>
+			<p class="sidebarauthor">- Winnie the Pooh</p>
+			<hr>
+			<div class="row">
+				<div class="column">
+					<a href="https://www.linkedin.com/in/shon/" target="_blank">
+						<img id="linkedin" src="assets/medias/linkedin.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to LinkedIn profile" class="mediaicon" loading="lazy"> 
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://github.com/coachshon" target="_blank">
+						<img id="github" src="assets/medias/github.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to GitHub profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://www.facebook.com/shon/" target="_blank">
+						<img id="facebook" src="assets/medias/facebook.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to Facebook profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://www.instagram.com/shon/" target="_blank">
+						<img id="instagram" src="assets/medias/instagram.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to Instagram profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+			</div>
+
+			<div class="nav_btns">
+				<button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button><br>
+				<button id="btn_myskills" onClick="navscroll(this)">SKILLS</button><br>
+				<button id="btn_work" onClick="navscroll(this)">EXPERIENCE</button><br>
+				<button id="btn_education" onClick="navscroll(this)">EDUCATION</button><br>
+				<button id="btn_projects" onClick="navscroll(this)">PROJECTS</button><br>
+			</div>
+			
+			<div class="nav_bottom_btns">
+				<div class="column_button">
+					<button onclick="location.href='mailto:shon.hogan@gmail.com'" id="btn_contactme">CONTACT ME</button>
+				</div>
+				<div class="column_button">
+					<button onclick="location.href='assets/cv.pptx'" target="_blank" id="btn_viewresume">GET MY CV</button>
+				</div>							
+			</div>
+
+		</div>
+	</nav>
+	<div id="mycontent" class="content">
+		<section id="about_me" class="scroll-element">
+			<div class="title">
+				<h1 class="firstname">
+					SHON
+				</h1>
+				<h1 class="lastname">
+					HOGAN
+				</h1>
+			</div>
+			<div class="container">
+				<img id="console" class="console_img" src="assets/console.png" loading="lazy">
+				<div id="typedtext" class="typedtextclass"> </div>
+			</div>
+		</section>
+
+		<section id="my_skills" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				SKILLS
+			</h1>
+			<div id="skills_grid_view" class="skill-cards">
+				<div id="android_platform_development" class="card">
+					<h3 class="card_title">Android Platform Developer</h3>
+					<img id="android_platform_logo" alt="Android Platform" src="assets/cards/android3.png"
+						class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>AOSP Blueprint</li>
+						<li>Android Automotive OS</li>
+						<li>Android System services development (Binder/AIDL)</li>
+						<li>Java/Kotlin system application development for Android Automotive</li>
+					</ul>
+				</div>
+				<div id="android_development" class="card">
+					<h3 class="card_title">Android Developer</h3>
+					<img id="android_logo" alt="Android" src="assets/cards/android2.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Mobile app development in Java/Kotlin</li>
+						<li>Android Architecture patterns</li>
+						<li>Android SDK/NDK</li>
+					</ul>
+				</div>
+				<div id="python_development" class="card">
+					<h3 class="card_title">Python Developer</h3>
+					<img id="python_logo" alt="Python" src="assets/cards/python.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Machine Learning and Deep Learning algorithms</li>
+						<li>Simulator development using pygame</li>
+						<li>Data analysis</li>
+						<li>Digital Signal Processing algorithms</li>
+					</ul>
+				</div>
+				<div id="c_cpp_development" class="card">
+					<h3 class="card_title"> C/C++ Developer</h3>
+					<img id="c_cpp_logo" alt="C/C++" src="assets/cards/cpp.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Low-level library development</li>
+						<li>Embedded systems</li>
+						<li>Arduino and Raspberry Pi prototypes</li>
+					</ul>
+				</div>
+				<div id="c_sharp_development" class="card">
+					<h3 class="card_title">C# Developer</h3>
+					<img id="c_sharp_logo" alt="C#" src="assets/cards/c-sharp.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Application Development for Windows OS with WPF</li>
+						<li>Engineering tools development</li>
+						<li>MySQL database</li>
+						<li>Windows API</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="work_experience" class="aftertw scroll-element">
+
+			<h1 class="titlehead">
+				EXPERIENCE
+			</h1>
+			<div class="we_timeline">
+				<div class="we_container left">
+					<div class="we_date">Dec 2023 - Now</div>
+					<img class="icon" alt="Button Logo" src="assets/timeline/button.svg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Senior FullStack Developer</h2>
+						<h3>Consulting</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Sept 2010 - Aug 2023</div>
+					<img class="icon" alt="Pfizer Logo" src="assets/timeline/pfizer.svg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Software Developer, .NET</h2>
+						<h3>Business Technology, Digital Solutions</h3>
+					</div>
+				</div>
+				<div class="we_container left">
+					<div class="we_date">Aug 2005 - Aug 2010</div>
+					<img class="icon" alt="GM Logo" src="assets/timeline/gm.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>Software Developer, Lotus Notes/Domino</h2>
+						<h3>General Motor Company</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Dec 2000 - Jul 2005</div>
+					<img class="icon" alt="CN Logo" src="assets/timeline/cn.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>Software Developer, Lotus Notes/Domino</h2>
+						<h3>CN Transportation Services</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="education" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				EDUCATION
+			</h1>
+			<div class="we_timeline">
+				<div class="we_container left">
+					<div class="we_date_education">2017 - 2023</div>
+					<img class="icon" alt="UFBA Logo" src="assets/timeline/ufba.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>B.E. Computer Engineering</h2>
+						<h3>Federal University of Bahia (UFBA)</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date_education">2014 - 2016</div>
+					<img class="icon" alt="SENAI Cimatec Logo" src="assets/timeline/senai_cimatec.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>A.S. Electrotechnology</h2>
+						<h3>SENAI Cimatec</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="aftertw scroll-element last-section">
+			<h1 class="titlehead">
+				PROJECTS
+			</h1>
+			<input type="radio" name="slider" id="left_slider">
+			<input type="radio" name="slider" id="center_slider" checked>
+			<input type="radio" name="slider" id="right_slider">			
+			<div id="projects_view" class="projects-cards">
+				<label id="left_card" for="left_slider"  class="left_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="left_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="left_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="center_card" for="center_slider" class="center_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="center_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="center_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="right_card" for="right_slider" class="right_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="right_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="right_card_button" class="projectsbutton"></button>
+				</label>
+			</div>
+			<div id="projects_languages" class="projects-languages clearfix" loading="lazy"></div>
+		</section>
+	</div>	
+</body>
+
+</html>
